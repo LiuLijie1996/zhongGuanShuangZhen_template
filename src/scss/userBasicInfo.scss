@@ -1,0 +1,167 @@
+@import "./footer";
+body{
+  background-color: #fff;
+}
+
+/*头部*/
+#detailHeader {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0.42rem;
+  background-color: $theme_color1;
+  z-index: 999999;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  color: #fff;
+
+  i, span {
+    font-size: .16rem;
+    margin-right: 0.2rem;
+  }
+
+  i {
+    padding-top: 0.03rem;
+  }
+}
+
+#hideForm {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 0.15rem;
+  i{
+    font-size: 0.15rem;
+  }
+
+  /*表单*/
+  .layui-form {
+    width: 100%;
+
+    .layui-form-item {
+      position: relative;
+
+      .layui-form-label {
+        position: relative;
+        width: 0.5rem;
+        padding: 0.09rem 0;
+        text-align: center;
+      }
+
+      .layui-form-label::after {
+        content: "";
+        position: absolute;
+        top: 0.1rem;
+        bottom: 0.1rem;
+        right: 0;
+        width: 1px;
+        background-color: $border_color8;
+      }
+
+      .layui-input-block {
+        position: relative;
+        margin-left: 0.6rem;
+
+        input {
+          border: 0;
+        }
+
+        .getVerifyCode {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          background-color: #fff;
+
+          button {
+            background-color: $theme_color4;
+          }
+        }
+      }
+    }
+
+    .layui-form-item::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $border_color7;
+    }
+
+    .layui-form-item.itemOn {
+      color: $theme_color4;
+
+      .layui-form-label::after {
+        background-color: $theme_color4;
+      }
+    }
+
+    .layui-form-item.itemOn::after {
+      background-color: $theme_color4;
+    }
+
+    /*提交按钮*/
+    .layui-form-item.submitBox {
+      margin-top: 0.5rem;
+
+      .layui-btn {
+        width: 2rem;
+        height: .3rem;
+        line-height: 0.3rem;
+        border-right: .2rem;
+        background-color: $theme_color1;
+        box-sizing: border-box;
+        border-radius: .3rem;
+        font-size: .15rem;
+      }
+    }
+
+    .layui-form-item.submitBox::after {
+      display: none;
+    }
+
+
+    .custom {
+      width: 100%;
+      overflow: hidden;
+      color: $font_color9;
+
+      .jiZhu {
+        float: left;
+
+        input {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .layui-form-checkbox {
+          display: none;
+        }
+      }
+
+      .wangJi {
+        float: right;
+
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .submitBox .layui-input-block {
+    text-align: center;
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,281 @@
+@import "./header";
+@import "./footer";
+
+#PageContent {
+  background-color: #fff;
+  /*横幅*/
+  .streamer {
+    width: 100%;
+    height: 300px;
+    background-image: url("../asset/images/streamer_1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .title {
+      width: 1200px;
+      margin: auto;
+      line-height: 300px;
+      font-size: 71px;
+      color: #fff;
+    }
+  }
+
+  /*隐藏的导航*/
+  .hideNavList {
+    display: none;
+  }
+
+  /*商品*/
+  .shopContent {
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    overflow: hidden;
+
+    /*面包屑导航*/
+    .breadcrumb {
+      padding: 24px 0;
+
+      a {
+        color: $font_color4 !important;
+      }
+    }
+
+
+    /*左侧导航*/
+    .leftNav {
+      float: left;
+      border: 1px solid $font_color7;
+
+      .navTitle {
+        padding: 0 35px;
+        box-sizing: border-box;
+        width: 280px;
+        height: 55px;
+        line-height: 55px;
+        background-color: #fff;
+        color: $font_color4;
+        font-size: 16px;
+      }
+
+      .navList {
+        .navItem {
+          padding: 0 35px;
+          box-sizing: border-box;
+          width: 280px;
+          height: 55px;
+          line-height: 55px;
+          background-color: #fff;
+          border-top: 1px solid $font_color7;
+          font-size: 16px;
+          cursor: pointer;
+
+          span {
+            color: $font_color4;
+          }
+
+          span:nth-child(1) {
+            float: left;
+            width: 50%;
+            text-align: left;
+          }
+
+          span:nth-child(2) {
+            float: right;
+            width: 50%;
+            text-align: right;
+          }
+        }
+
+        .nav-this {
+          background-color: $theme_color1;
+
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    /*右侧商品*/
+    .rightShop {
+      float: right;
+      width: 891px;
+      min-height: 100px;
+
+      .shopList {
+        overflow: hidden;
+        .shopItem {
+          float: left;
+          width: 271px;
+          height: 370px;
+          border: 1px solid $border_color4;
+          margin-right: 36px;
+          margin-bottom: 36px;
+          transition: $transition;
+
+          .pic {
+            width: 100%;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .shopTitle {
+            font-size: 16px;
+            color: $font_color3;
+            padding: 0 12px;
+            box-sizing: border-box;
+          }
+
+          .price {
+            font-size: 20px;
+            color: $font_color8;
+            padding: 10px;
+            box-sizing: border-box;
+          }
+        }
+
+        .shopItem:hover {
+          border-color: $theme_color1;
+        }
+
+        .shopItem:nth-child(3), .shopItem:nth-child(6) {
+          margin-right: 0;
+        }
+      }
+
+      /*分页*/
+      .pageDome {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  #PageContent {
+    width: 100%;
+    overflow: hidden;
+    background-color: $bgc_color5;
+
+    .streamer {
+      display: none;
+    }
+
+    /*隐藏的导航*/
+    .hideNavList {
+      display: block;
+      width: 100%;
+      height: .475rem;
+      line-height: .475rem;
+      background-color: $bgc_color4;
+
+      #wrapper {
+        width: 100%;
+        height: 100%;
+
+        .content {
+          height: 100%;
+
+          li.nav-item {
+            float: left;
+            height: 100%;
+            padding: 0 0.15rem;
+
+            span {
+              transition: $transition;
+            }
+          }
+
+          li.nav-this {
+            color: $theme_color1;
+
+            span {
+              float: left;
+              height: .44rem;
+              border-bottom: 0.03rem solid $theme_color1;
+            }
+          }
+        }
+      }
+    }
+
+    .shopContent {
+      width: 100%;
+      background-color: rgba(0,0,0,0);
+
+      /*面包屑导航隐藏*/
+      .breadcrumb {
+        display: none;
+      }
+
+      /*左侧导航隐藏*/
+      .leftNav {
+        display: none;
+      }
+
+      /*分页*/
+      .pageDome{
+        padding: 0.1rem;
+      }
+
+      .rightShop {
+        width: 100%;
+        .shopList{
+          padding: 0.1rem 0.18rem;
+
+          .shopItem {
+            float: left;
+            width: 1.57rem;
+            height: 2.15rem;
+            margin-right: .2rem;
+            margin-bottom: .2rem;
+            border-radius: 0.05rem;
+            background-color: #fff;
+
+            .pic {
+              width: 100%;
+              height: 1.65rem;
+              padding: 0.18rem;
+              box-sizing: border-box;
+            }
+
+            .shopTitle {
+              font-size: 0.12rem;
+              color: $font_color3;
+              padding: 0 0.1rem;
+              box-sizing: border-box;
+            }
+
+            .price {
+              font-size: 0.12rem;
+              color: $font_color8;
+              padding: 0 0.1rem;
+              margin-top: 0.1rem;
+              box-sizing: border-box;
+            }
+          }
+
+          .shopItem:hover{
+            border: 1px solid $border_color4;
+          }
+
+          .shopItem:nth-child(3), .shopItem:nth-child(6) {
+            margin-right: .2rem;
+            margin-bottom: .2rem;
+          }
+          .shopItem:nth-child(2), .shopItem:nth-child(4), .shopItem:nth-child(6) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

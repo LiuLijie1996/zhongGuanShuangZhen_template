@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <title>首页</title>
+</head>
+<body>
+<!--头部-->
+<div id="header">
+    <!--默认显示的-->
+    <div class="box">
+        <div class="logo">
+            <img src="../asset/images/logo.png" alt="">
+        </div>
+
+        <!--导航-->
+        <div class="tabBar">
+            <ul class="layui-nav">
+                <li class="layui-nav-item layui-this">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--登录-->
+        <div class="loginBox">
+            <div class="top">
+                <p class="isShow">
+                    <span class="register">
+                        <a href="/register.html">注册</a>
+                    </span>
+                    <span class="login">
+                        <a href="/register.html">登录</a>
+                    </span>
+                </p>
+                <p class="isHide">
+                    <a href="/personalCenter.html">
+                        <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1425010324,3983996314&fm=26&gp=0.jpg" class="photo" alt="">
+                        <span class="userName">小明</span>
+                    </a>
+                </p>
+            </div>
+            <div class="bottom">
+                <input type="text" placeholder="搜索" autocomplete="off" class="layui-input">
+                <div class="search">
+                    <i class="layui-icon layui-icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--默认隐藏的-->
+    <div class="hideBox">
+        <div class="header">
+            <div class="logo">
+                <img src="../asset/images/phone_logo.png" alt="">
+            </div>
+            <div class="right_icon">
+                <i class="layui-icon layui-icon-search"></i>
+                <i class="layui-icon layui-icon-shrink-right"></i>
+            </div>
+        </div>
+
+        <!--隐藏的搜索框-->
+        <div class="searchInput">
+            <input type="text" class="layui-input">
+            <i class="layui-icon layui-icon-search"></i>
+        </div>
+
+        <!--隐藏的导航栏-->
+        <div class="navList">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-this">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/personalCenter.html">个人中心</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--页面主体内容-->
+<div id="PageContent">
+    <!--banner图-->
+    <div class="banner">
+        <div class="layui-carousel" id="test1">
+            <div carousel-item>
+                <div>
+                    <img src="../asset/images/economyDevice_bg.png" alt="">
+                </div>
+                <div>
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+                <div>条目3</div>
+                <div>条目4</div>
+                <div>条目5</div>
+            </div>
+        </div>
+    </div>
+
+    <!--隐藏到导航-->
+    <div class="hideNav">
+        <ul class="list">
+            <li class="item">
+                <div class="pic">
+                    <img src="../asset/images/productCenter.png" alt="">
+                </div>
+                <p class="title">产品中心</p>
+            </li>
+            <li class="item">
+                <div class="pic">
+                    <img src="../asset/images/newsInformation.png" alt="">
+                </div>
+                <p class="title">新闻资讯</p>
+            </li>
+            <li class="item">
+                <div class="pic">
+                    <img src="../asset/images/cooperationJoin.png" alt="">
+                </div>
+                <p class="title">合作加盟</p>
+            </li>
+            <li class="item">
+                <div class="pic">
+                    <img src="../asset/images/contactUs.png" alt="">
+                </div>
+                <p class="title">联系我们</p>
+            </li>
+        </ul>
+    </div>
+
+    <!--公司简介-->
+    <div class="companySynopsis">
+        <h2 class="title">
+            <span>公司简介</span>
+        </h2>
+
+        <!--默认显示的信息-->
+        <div class="content">
+            <div class="showInfo">
+                <div class="pic">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+                <div class="detail">
+                    <p>
+                        上海振政环保科技有限公司自主研发团队于2017年在深圳成立。团队经历三年研发余热回收技术，于2020年正式成立安徽双振智联能源环保科技有限公司生产型高新技术企业。
+                    </p>
+                    <p>
+                        安徽双振智联能源环保科技有限公司‘中冠双振’空调节能产品在韩国、缅甸、泰国、越南以及中国的南方省份已经广泛的使用。我司品牌‘中冠双振′空调节能装置涵盖了餐饮酒店、美容健身、房地产配套、工厂、学校、医院、机场、政府机关等领域。公司经过3年多累积经验，拼搏奋斗、锐意进取，现已拥有国家发明专利和实用新型专利证书，现研发团队发展到二十五人，生产线及代加工厂五家。
+
+                        <button class="layui-btn layui-btn-primary"> 查看更多></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--隐藏的信息-->
+        <div class="hideInfo">
+            <div class="infoContent">
+                <p>
+                    上海振政环保科技有限公司自主研发团队于2017年在深圳成立。团队经历三年研发余热回收技术，于2020年正式成立安徽双振智联能源环保科技有限公司生产型高新技术企业。
+                </p>
+                <p>
+                    安徽双振智联能源环保科技有限公司‘中冠双振’空调节能产品在韩国、缅甸、泰国、越南以及中国的南方省份已经广泛的使用。我司品牌‘中冠双振′空调节能装置涵盖了餐饮酒店、美容健身、房地产配套、工厂、学校、医院、机场、政府机关等领域。公司经过3年多累积经验，拼搏奋斗、锐意进取，现已拥有国家发明专利和实用新型专利证书，现研发团队发展到二十五人，生产线及代加工厂五家。
+                </p>
+                <p>
+                    我们将以全球精核的空调余热回收新能源技术、完善的售后体系和亲民的价格，让每个使用者能体验到产品节能的优势。
+                </p>
+                <button class="layui-btn layui-btn-primary"> 查看更多></button>
+            </div>
+        </div>
+    </div>
+
+    <!--空调节能装置-->
+    <div class="economyDevice">
+        <h2 class="title">
+            <span>空调节能装置</span>
+        </h2>
+
+        <ul class="list">
+            <li class="item">
+                <!--默认显示的信息-->
+                <div class="showInfo">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+
+                <!--隐藏的信息-->
+                <div class="hideInfo">
+                    <p class="item_title">KLJA-30</p>
+                    <p class="viewDetail">查看详情</p>
+                    <p class="jiantou">
+                        <img src="../asset/images/jiantou.png" alt="">
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <!--默认显示的信息-->
+                <div class="showInfo">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+
+                <!--隐藏的信息-->
+                <div class="hideInfo">
+                    <p class="item_title">KLJA-30</p>
+                    <p class="viewDetail">查看详情</p>
+                    <p class="jiantou">
+                        <img src="../asset/images/jiantou.png" alt="">
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <!--默认显示的信息-->
+                <div class="showInfo">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+
+                <!--隐藏的信息-->
+                <div class="hideInfo">
+                    <p class="item_title">KLJA-30</p>
+                    <p class="viewDetail">查看详情</p>
+                    <p class="jiantou">
+                        <img src="../asset/images/jiantou.png" alt="">
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <!--默认显示的信息-->
+                <div class="showInfo">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+
+                <!--隐藏的信息-->
+                <div class="hideInfo">
+                    <p class="item_title">KLJA-30</p>
+                    <p class="viewDetail">查看详情</p>
+                    <p class="jiantou">
+                        <img src="../asset/images/jiantou.png" alt="">
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <!--默认显示的信息-->
+                <div class="showInfo">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+
+                <!--隐藏的信息-->
+                <div class="hideInfo">
+                    <p class="item_title">KLJA-30</p>
+                    <p class="viewDetail">查看详情</p>
+                    <p class="jiantou">
+                        <img src="../asset/images/jiantou.png" alt="">
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <!--默认显示的信息-->
+                <div class="showInfo">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+
+                <!--隐藏的信息-->
+                <div class="hideInfo">
+                    <p class="item_title">KLJA-30</p>
+                    <p class="viewDetail">查看详情</p>
+                    <p class="jiantou">
+                        <img src="../asset/images/jiantou.png" alt="">
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <!--默认显示的信息-->
+                <div class="showInfo">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+
+                <!--隐藏的信息-->
+                <div class="hideInfo">
+                    <p class="item_title">KLJA-30</p>
+                    <p class="viewDetail">查看详情</p>
+                    <p class="jiantou">
+                        <img src="../asset/images/jiantou.png" alt="">
+                    </p>
+                </div>
+            </li>
+            <li class="item">
+                <!--默认显示的信息-->
+                <div class="showInfo">
+                    <img src="../asset/images/companySynopsis_1.png" alt="">
+                </div>
+
+                <!--隐藏的信息-->
+                <div class="hideInfo">
+                    <p class="item_title">KLJA-30</p>
+                    <p class="viewDetail">查看详情</p>
+                    <p class="jiantou">
+                        <img src="../asset/images/jiantou.png" alt="">
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+        <!--隐藏的按钮-->
+        <div class="hideBtn">
+            <a href="">
+                <button class="layui-btn ">查看更多></button>
+            </a>
+        </div>
+    </div>
+
+    <!--产品功能-->
+    <div class="productFunction">
+        <!--默认显示的内容-->
+        <ul class="list">
+            <li class="item">
+                <p class="icon">
+                    <i class="iconfont iconjieneng"></i>
+                </p>
+                <p class="item_title">节能</p>
+                <p class="sub_title">节点25%~45%</p>
+            </li>
+            <li class="item">
+                <p class="icon">
+                    <i class="iconfont iconjianpai"></i>
+                </p>
+                <p class="item_title">减排</p>
+                <p class="sub_title">减轻空调外机向大气排放的热量</p>
+            </li>
+            <li class="item">
+                <p class="icon">
+                    <i class="iconfont iconzuanshi"></i>
+                </p>
+                <p class="item_title">耐用</p>
+                <p class="sub_title">延长压缩机及外机使用寿命</p>
+            </li>
+            <li class="item">
+                <p class="icon">
+                    <i class="iconfont iconjingyinmute31"></i>
+                </p>
+                <p class="item_title">静音</p>
+                <p class="sub_title">减轻压缩机噪音，避免了家人及邻里噪音影响休息</p>
+            </li>
+            <li class="item">
+                <p class="icon">
+                    <i class="iconfont iconfeng"></i>
+                </p>
+                <p class="item_title">凉爽</p>
+                <p class="sub_title">比普通空调制冷效果更好</p>
+            </li>
+        </ul>
+
+        <!--默认隐藏的内容-->
+        <div class="hideDefault">
+            <img src="../asset/images/productFunction.png" alt="">
+        </div>
+    </div>
+
+    <!--新闻资讯-->
+    <div class="newsInformation">
+        <h2 class="title">
+            <span>新闻资讯</span>
+        </h2>
+
+        <!--默认显示的内容-->
+        <div class="content">
+            <!--左边的内容-->
+            <div class="left">
+                <div class="pic">
+                    <img src="../asset/images/economyDevice_bg.png" alt="">
+                </div>
+                <div class="detail">
+                    <div class="time">
+                        2020-10-29
+                    </div>
+                    <div class="text">
+                        <div class="title">大浪淘沙下的环保产业 核心能力是发展关</div>
+                        <div class="text_content">
+                            在国家大力推动生态文明建设，坚决打赢污染防治攻坚战等政策支持背景下，近年来我
+                            国环保产业规模不断扩大、技术迭代速度明显加快、合作模式不断创新，整体呈坚决打
+                            赢污染防治攻坚战等政策支持背景下
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--右边的列表-->
+            <div class="right">
+                <div class="item">
+                    <a href="">
+                        <!--发布时间-->
+                        <div class="time">
+                            <p class="day">29</p>
+                            <p class="y_m">2020-10</p>
+                        </div>
+
+                        <!--标题及内容-->
+                        <div class="text">
+                            <div class="title">
+                                <span class="tit">大浪淘沙下的环保产业 核心能力是发展关</span>
+                                <span class="iconfont icon-_danjiantou"></span>
+                            </div>
+                            <div class="text_content">
+                                在国家大力推动生态文明建设，坚决打赢污染防治攻坚战等政策支持背景下，近年来我
+                                国环保产业规模不断扩大、技术迭代速度明显加快、合作模式不断创新，整体呈坚决打
+                                赢污染防治攻坚战等政策支持背景下
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <!--发布时间-->
+                        <div class="time">
+                            <p class="day">29</p>
+                            <p class="y_m">2020-10</p>
+                        </div>
+
+                        <!--标题及内容-->
+                        <div class="text">
+                            <div class="title">
+                                <span class="tit">大浪淘沙下的环保产业 核心能力是发展关</span>
+                                <span class="iconfont icon-_danjiantou"></span>
+                            </div>
+                            <div class="text_content">
+                                在国家大力推动生态文明建设，坚决打赢污染防治攻坚战等政策支持背景下，近年来我
+                                国环保产业规模不断扩大、技术迭代速度明显加快、合作模式不断创新，整体呈坚决打
+                                赢污染防治攻坚战等政策支持背景下
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <!--发布时间-->
+                        <div class="time">
+                            <p class="day">29</p>
+                            <p class="y_m">2020-10</p>
+                        </div>
+
+                        <!--标题及内容-->
+                        <div class="text">
+                            <div class="title">
+                                <span class="tit">大浪淘沙下的环保产业 核心能力是发展关</span>
+                                <span class="iconfont icon-_danjiantou"></span>
+                            </div>
+                            <div class="text_content">
+                                在国家大力推动生态文明建设，坚决打赢污染防治攻坚战等政策支持背景下，近年来我
+                                国环保产业规模不断扩大、技术迭代速度明显加快、合作模式不断创新，整体呈坚决打
+                                赢污染防治攻坚战等政策支持背景下
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <!--发布时间-->
+                        <div class="time">
+                            <p class="day">29</p>
+                            <p class="y_m">2020-10</p>
+                        </div>
+
+                        <!--标题及内容-->
+                        <div class="text">
+                            <div class="title">
+                                <span class="tit">大浪淘沙下的环保产业 核心能力是发展关</span>
+                                <span class="iconfont icon-_danjiantou"></span>
+                            </div>
+                            <div class="text_content">
+                                在国家大力推动生态文明建设，坚决打赢污染防治攻坚战等政策支持背景下，近年来我
+                                国环保产业规模不断扩大、技术迭代速度明显加快、合作模式不断创新，整体呈坚决打
+                                赢污染防治攻坚战等政策支持背景下
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--移动端显示的新闻-->
+        <div class="hideList">
+            <div class="item bgc">
+                <div class="title">大浪淘沙下的环保产业 核心能力是发展关</div>
+                <div class="date">
+                    <i class="iconfont iconshijian"></i>
+                    <span>2020-01</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">大浪淘沙下的环保产业 核心能力是发展关</div>
+                <div class="date">
+                    <i class="iconfont iconshijian"></i>
+                    <span>2020-01</span>
+                </div>
+            </div>
+            <div class="item bgc">
+                <div class="title">大浪淘沙下的环保产业 核心能力是发展关</div>
+                <div class="date">
+                    <i class="iconfont iconshijian"></i>
+                    <span>2020-01</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">大浪淘沙下的环保产业 核心能力是发展关</div>
+                <div class="date">
+                    <i class="iconfont iconshijian"></i>
+                    <span>2020-01</span>
+                </div>
+            </div>
+            <div class="item bgc">
+                <div class="title">大浪淘沙下的环保产业 核心能力是发展关</div>
+                <div class="date">
+                    <i class="iconfont iconshijian"></i>
+                    <span>2020-01</span>
+                </div>
+            </div>
+
+            <div class="btn">
+                <a href="">
+                    <button class="layui-btn ">查看更多></button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--适用范围-->
+    <div class="probationScope">
+        <!--默认显示的内容-->
+        <div class="show">
+            <h2 class="title">
+                <span>适用范围</span>
+            </h2>
+
+            <!--列表-->
+            <ul class="list">
+                <li class="item">
+                    <p class="pic">
+                        <img src="../asset/images/jiudian.png" alt="">
+                    </p>
+                    <p class="title">酒店</p>
+                </li>
+                <li class="item">
+                    <p class="pic">
+                        <img src="../asset/images/xuexiao.png" alt="">
+                    </p>
+                    <p class="title">学校</p>
+                </li>
+                <li class="item">
+                    <p class="pic">
+                        <img src="../asset/images/dalou.png" alt="">
+                    </p>
+                    <p class="title">办公大楼</p>
+                </li>
+                <li class="item">
+                    <p class="pic">
+                        <img src="../asset/images/shangchao.png" alt="">
+                    </p>
+                    <p class="title">商超</p>
+                </li>
+                <li class="item">
+                    <p class="pic">
+                        <img src="../asset/images/danwei.png" alt="">
+                    </p>
+                    <p class="title">企业单位</p>
+                </li>
+            </ul>
+        </div>
+
+        <!--默认隐藏的内容-->
+        <div class="hideDefault">
+            <img src="../asset/images/phoneShangChao.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!--默认显示的底部-->
+<div id="footer">
+    <div class="box1">
+        <div class="left">
+            <div class="top">
+                <a href="">首页</a> | <a href="">关于中冠双振</a> | <a href="">产品中心</a> | <a href="">新闻资讯</a> | <a
+                    href="">合作加盟</a> | <a href="">加入我们</a> | <a href="">联系我们</a>
+            </div>
+            <div class="info">
+                <p>全国热线：0554-8222789</p>
+                <p>招商销售电话：18055411655</p>
+                <p>地址：安徽省淮南市山南新区泰丰大街科技企业孵化器一号楼4层 / 上海浦东新区万安街332号</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="code">
+                <div class="pic">
+                    <img src="../asset/images/productCode.png" alt="">
+                </div>
+                <div class="title">产品视频</div>
+            </div>
+            <div class="code">
+                <div class="pic">
+                    <img src="../asset/images/installCode.png" alt="">
+                </div>
+                <div class="title">安装视频</div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        Copyright © 2017 All Rights Reserved 方大网络 皖ICP备17028853号-1 技术支持：淮南方大网络技术有限公司
+    </div>
+</div>
+<!--默认隐藏的底部-->
+<div id="hideFooter">
+    <div class="info">
+        <p>
+            <span>全国热线：</span>
+            <span>0554-8222789</span>
+        </p>
+        <p>
+            <span>招商销售电话：</span>
+            <span>18055411655</span>
+        </p>
+        <p>
+            <span>地址：</span>
+            <span>安徽省淮南市山南新区泰丰大街科技企业孵化器一号楼4层上海浦东新区万安街332号</span>
+        </p>
+    </div>
+
+    <div class="codeBox">
+        <div class="code">
+            <div class="pic">
+                <img src="../asset/images/productCode.png" alt="">
+            </div>
+            <div class="title">产品视频</div>
+        </div>
+        <div class="code">
+            <div class="pic">
+                <img src="../asset/images/installCode.png" alt="">
+            </div>
+            <div class="title">安装视频</div>
+        </div>
+    </div>
+
+    <div class="navList">
+        <a href="">产品中心</a> |
+        <a href="">新闻资讯</a> |
+        <a href="">合作加盟</a> |
+        <a href="">联系我们</a>
+    </div>
+
+    <div class="ICP">
+        <span>皖ICP备17028853号-1</span>
+        <span>技术支持：淮南方大网络技术有限公司</span>
+    </div>
+</div>
+
+</body>
+
+<script>
+    layui.use(['element', 'carousel'], function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+        /*轮播图*/
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1',
+            width: '100%', //设置容器宽度
+            height: "100%",
+            arrow: 'none',
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,260 @@
+@import "./common";
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 112px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  background-color: #fff;
+  z-index: 100;
+
+  .hideBox {
+    display: none;
+  }
+
+  .box {
+    width: 1200px;
+    height: 112px;
+    margin: auto;
+
+    /*logo*/
+    .logo {
+      float: left;
+      width: 231px;
+      height: 112px;
+      line-height: 112px;
+    }
+
+    /*导航*/
+    .tabBar {
+      float: left;
+      width: 768px;
+      height: 112px;
+      box-sizing: border-box;
+
+      .layui-nav {
+        height: 112px;
+        background-color: rgba(0, 0, 0, 0);
+
+        .layui-nav-bar {
+          background-color: $theme_color1;
+        }
+
+        .layui-nav-item.layui-this:after {
+          background-color: $theme_color1;
+        }
+
+        .layui-nav-item {
+          line-height: 112px;
+
+          a {
+            color: #000;
+            font-size: 16px;
+          }
+
+          .layui-nav-child {
+            top: 112px;
+          }
+        }
+      }
+    }
+
+    /*登录按钮*/
+    .loginBox {
+      float: right;
+      width: 160px;
+      height: 112px;
+      box-sizing: border-box;
+
+      .top {
+        width: 160px;
+        text-align: right;
+
+        .isShow{
+          display: inline-block;
+          margin: 0 10px 10px 0;
+          padding-top: 20px;
+          .login::before {
+            content: "|";
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 5px;
+          }
+        }
+
+        .isHide{
+          display: none;
+          padding: 10px 0;
+          img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+          .userName{
+            margin-left: 5px;
+            color: $theme_color1;
+          }
+        }
+      }
+
+      .bottom {
+        position: relative;
+        width: 160px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .layui-input {
+          width: 120px;
+          border: 0;
+        }
+        .search {
+          position: absolute;
+          right: 5px;
+          top:0;
+          bottom: 0;
+          padding: 5px;
+          box-sizing: border-box;
+          i{
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//页面内容
+#PageContent {
+  padding-top: 110px;
+}
+
+@media (max-width: 750px) {
+  #header {
+    width: 100%;
+    height: 0.42rem;
+    background-color: $theme_color1;
+    box-shadow: none;
+    border-bottom: 0 !important;
+
+    .box {
+      display: none;
+    }
+
+    .hideBox {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 0.42rem;
+
+      .header {
+        width: 100%;
+        height: 0.42rem;
+
+        .logo {
+          float: left;
+          height: 0.42rem;
+          padding: 0.075rem;
+          box-sizing: border-box;
+          img{
+            width: 1.15rem;
+            height: 0.3rem;
+          }
+        }
+
+        .right_icon {
+          float: right;
+          height: 0.415rem;
+          line-height: 0.415rem;
+
+          .layui-icon {
+            margin: 0 0.1rem 0 0;
+            font-size: 0.2rem;
+            color: #fff;
+          }
+        }
+      }
+
+      /*搜索框*/
+      .searchInput {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -0.39rem;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0.05rem;
+        box-sizing: border-box;
+        transition: $transition;
+        background-color: $theme_color1;
+
+        input {
+          float: left;
+          width: 92%;
+          height: 0.3rem;
+          line-height: 0.3rem;
+        }
+
+        .layui-icon {
+          float: right;
+          font-size: 0.2rem;
+          margin-top: 0.03rem;
+          margin-right: 0.03rem;
+          color: #fff;
+        }
+      }
+
+      /*导航栏*/
+      .navList {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        background-color: #333;
+        transition: $transition;
+        overflow: auto;
+
+        .layui-nav-tree .layui-this, .layui-nav-tree .layui-this > a {
+          background-color: $theme_color1;
+          color: #fff !important;
+        }
+
+        .layui-nav-itemed > a, .layui-nav-tree .layui-nav-title a, .layui-nav-tree .layui-nav-title a:hover {
+          background-color: $theme_color1;
+        }
+
+        .layui-nav {
+          height: 100%;
+          background-color: #333;
+
+          .layui-nav-item {
+            a {
+              color: #fff;
+            }
+
+            a:hover {
+              background-color: $theme_color1 !important;
+            }
+
+            .layui-nav-child {
+              a {
+                color: #fff;
+              }
+            }
+          }
+
+          .layui-nav-itemed {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  #PageContent {
+    padding-top: 0.42rem !important;
+  }
+}

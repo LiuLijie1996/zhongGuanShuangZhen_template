@@ -1,0 +1,145 @@
+@import "./header";
+@import "./footer";
+
+#PageContent {
+  background-color: #fff;
+  /*横幅*/
+  .streamer {
+    width: 100%;
+    height: 300px;
+    background-image: url("../asset/images/streamer_1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .title {
+      width: 1200px;
+      margin: auto;
+      line-height: 300px;
+      font-size: 71px;
+      color: #fff;
+    }
+  }
+
+  /*新闻*/
+  .newsContent {
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    overflow: hidden;
+
+    /*面包屑导航*/
+    .breadcrumb {
+      padding: 24px 0;
+
+      a {
+        color: $font_color4 !important;
+      }
+    }
+
+    /*新闻主体*/
+    .newsBody {
+      .title {
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid $border_color4;
+      }
+
+      /*发布信息*/
+      .faBuInfo {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        color: $font_color4;
+        font-size: 15px;
+
+        p {
+          padding: 0 20px;
+        }
+      }
+
+      /*内容*/
+      .content{
+        padding: 0 0 20px 0;
+      }
+    }
+
+    /*翻页*/
+    .flipOver{
+      padding: 20px 0;
+      border-top:1px solid $border_color4;
+      p{
+        padding: 10px 0;
+        cursor: pointer;
+      }
+      p.over{
+        color: $font_color4;
+        cursor: no-drop;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 750px) {
+  #PageContent {
+    width: 100%;
+    overflow: hidden;
+    background-color: $bgc_color5;
+
+    .streamer {
+      display: none;
+    }
+
+    /*新闻*/
+    .newsContent{
+      width: 100%;
+
+      /*面包屑导航*/
+      .breadcrumb {
+        display: none;
+      }
+
+      /*新闻主体*/
+      .newsBody {
+        .title {
+          padding: 0.2rem;
+          font-size: 0.2rem;
+          border-bottom: 1px solid $border_color4;
+        }
+
+        /*发布信息*/
+        .faBuInfo {
+          display: block;
+          padding: 0.2rem;
+          font-size: 0.12rem;
+
+          p {
+            float: left;
+            width: 30%;
+            text-align: center;
+            padding: 0;
+          }
+          p.time{
+            width: 40%;
+          }
+        }
+
+        /*内容*/
+        .content{
+          padding: 0.15rem;
+        }
+      }
+
+      /*翻页*/
+      .flipOver{
+        padding: 0;
+        border-top:1px solid $border_color4;
+        p {
+          float: left;
+          width: 50%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

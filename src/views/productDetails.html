@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <title>产品详情</title>
+</head>
+<body>
+<!--PC端头部-->
+<div id="header">
+    <!--默认显示的-->
+    <div class="box">
+        <div class="logo">
+            <img src="../asset/images/logo.png" alt="">
+        </div>
+
+        <!--导航-->
+        <div class="tabBar">
+            <ul class="layui-nav">
+                <li class="layui-nav-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--登录-->
+        <div class="loginBox">
+            <div class="top">
+                <p class="isShow">
+                    <span class="register">
+                        <a href="/register.html">注册</a>
+                    </span>
+                    <span class="login">
+                        <a href="/register.html">登录</a>
+                    </span>
+                </p>
+                <p class="isHide">
+                    <a href="">
+                        <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1425010324,3983996314&fm=26&gp=0.jpg"
+                             class="photo" alt="">
+                        <span class="userName">小明</span>
+                    </a>
+                </p>
+            </div>
+            <div class="bottom">
+                <input type="text" placeholder="搜索" autocomplete="off" class="layui-input">
+                <div class="search">
+                    <i class="layui-icon layui-icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--移动端详情头部-->
+<div id="detailHeader">
+    <i class="layui-icon layui-icon-left" onclick="window.history.go(-1);"></i>
+    <span>产品详情</span>
+</div>
+
+<!--页面主体内容-->
+<div id="PageContent">
+    <!--移动端-->
+    <div id="mobile">
+        <!--产品轮播图-->
+        <div class="swiper-container" id="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1089874897,1268118658&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3922290090,3177876335&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!--价格、标题-->
+        <div class="priceBox">
+            <div class="title">空调节能装置 KLJA-30</div>
+            <div class="price">￥ 869.00</div>
+        </div>
+
+        <!--详情内容-->
+        <div class="detailContent">
+            <!--文字-->
+            <div class="text">
+                型号:KLJA-30
+                尺寸:30cmX22cm
+                配件规格:25cmx55cm9.52铜管螺丝连接件
+                匹配机型:1p~1.5p挂机及连动
+                试用:R-22冷媒、更节能、更环保、更耐用、更省钱
+                技术:采用空调自身能源循环回收技术
+            </div>
+
+            <!--图片-->
+            <div class="pics">
+                <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
+                     alt="">
+                <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
+                     alt="">
+                <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
+                     alt="">
+                <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
+                     alt="">
+                <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"
+                     alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--pc端-->
+    <div id="PC">
+        <!--横幅-->
+        <div class="streamer">
+            <h1 class="title">产品中心</h1>
+        </div>
+
+        <!--商品详情-->
+        <div class="shopDetail">
+            <!--面包屑导航-->
+            <div class="breadcrumb">
+                <span class="layui-breadcrumb" lay-separator=">">
+                    <a href="/">首页</a>
+                    <a href="/productCenter.html">产品中心</a>
+                    <a><cite>产品详情</cite></a>
+                </span>
+            </div>
+
+            <!--产品规格-->
+            <div class="specification">
+                <div class="left">
+                    <!--商品主图-->
+                    <div class="masterImg">
+                        <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3942751454,1089199356&fm=26&gp=0.jpg"
+                             alt="">
+                    </div>
+                    <!--小图-->
+                    <div class="smallImg">
+                        <div class="pic on">
+                            <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3942751454,1089199356&fm=26&gp=0.jpg"
+                                 alt="">
+                        </div>
+                        <div class="pic">
+                            <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3942751454,1089199356&fm=26&gp=0.jpg"
+                                 alt="">
+                        </div>
+                        <div class="pic">
+                            <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3942751454,1089199356&fm=26&gp=0.jpg"
+                                 alt="">
+                        </div>
+                    </div>
+                    <!--加入收藏-->
+                    <div class="collect">
+                        <i class="iconfont iconshoucang"></i>
+                        <span>加入收藏</span>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="title">空调节能装置</div>
+                    <div class="price fontRed">￥ <span>869.00</span></div>
+                    <div class="text">
+                        <p>型号:KLJA-30</p>
+                        <p>尺寸:30cmX22cm</p>
+                        <p>配件规格:25cmx55cm9.52铜管螺丝连接件</p>
+                        <p>匹配机型:1p~1.5p挂机及连动</p>
+                    </div>
+                    <div class="btn" data-id="1" data-freight="0">
+                        <button class="layui-btn layui-btn-primary" id="promptlyBuy">立即购买</button>
+                        <button class="layui-btn layui-btn-danger" id="pushShopCart">加入购物车</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--产品详情-->
+            <div class="detailContent">
+                <div class="header">
+                    <img src="../asset/images/border.png" alt="">
+                    <span>产品详情</span>
+                </div>
+
+                <!--规格简介-->
+                <div class="synopsis">
+                    <div class="leftText">
+                        <P>型号:KLJA-30</P>
+                        <P>配件规格:25cmx55cm9.52铜管螺丝连接件</P>
+                        <P>试用:R-22冷媒、更节能、更环保、更耐用、更省钱</P>
+                        <P>技术:采用空调自身能源循环回收技术</P>
+                    </div>
+
+                    <div class="rightText">
+                        <P>尺寸:30cmX22cm</P>
+                        <P>匹配机型:1p~1.5p挂机及连动</P>
+                    </div>
+                </div>
+
+                <!--图片-->
+                <div class="pics">
+                    <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2771978851,2906984932&fm=26&gp=0.jpg"
+                         alt="">
+                    <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2771978851,2906984932&fm=26&gp=0.jpg"
+                         alt="">
+                    <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2771978851,2906984932&fm=26&gp=0.jpg"
+                         alt="">
+                    <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2771978851,2906984932&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--默认显示的底部-->
+<div id="footer">
+    <div class="box1">
+        <div class="left">
+            <div class="top">
+                <a href="">首页</a> | <a href="">关于中冠双振</a> | <a href="">产品中心</a> | <a href="">新闻资讯</a> | <a
+                    href="">合作加盟</a> | <a href="">加入我们</a> | <a href="">联系我们</a>
+            </div>
+            <div class="info">
+                <p>全国热线：0554-8222789</p>
+                <p>招商销售电话：18055411655</p>
+                <p>地址：安徽省淮南市山南新区泰丰大街科技企业孵化器一号楼4层 / 上海浦东新区万安街332号</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="code">
+                <div class="pic">
+                    <img src="../asset/images/productCode.png" alt="">
+                </div>
+                <div class="title">产品视频</div>
+            </div>
+            <div class="code">
+                <div class="pic">
+                    <img src="../asset/images/installCode.png" alt="">
+                </div>
+                <div class="title">安装视频</div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        Copyright © 2017 All Rights Reserved 方大网络 皖ICP备17028853号-1 技术支持：淮南方大网络技术有限公司
+    </div>
+</div>
+
+<!--移动端底部加购-->
+<div id="addShop">
+    <div class="home">
+        <a href="">
+            <i class="iconfont iconchaoshi"></i>
+            <span>首页</span>
+        </a>
+    </div>
+    <div class="collect fontRed">
+        <i class="iconfont iconshoucang"></i>
+        <span>收藏</span>
+    </div>
+    <div class="push">
+        <i class="layui-icon"></i>
+        <span class="mobileJoinShopCart">加入购物车</span>
+    </div>
+    <div class="promptly">
+        <i class="layui-icon"></i>
+        <span data-href="/buyItNow.html" class="mobilePromptlyBuy">立即购买</span>
+    </div>
+</div>
+
+<!--购物车 / 订单结算-->
+<div id="shoppingTrolley" class="shoppingTrolley">
+    <div class="drawer">
+        <!--默认显示的头部-->
+        <div class="showHeader">
+            <div class="header">
+                        <span class="layui-badge">
+                            <i id="badge">6</i>
+                        </span>
+                <div class="jiantou hideShopCart">
+                    <i class="layui-icon layui-icon-right"></i>
+                </div>
+                <div class="btn">
+                    <span id="checkAll">全选</span>
+                    <span id="delete">删除</span>
+                </div>
+            </div>
+        </div>
+
+        <!--默认隐藏的头部-->
+        <div class="hideHeader">
+            <div class="header">
+                <div class="jiantou hideShopCart">
+                    <i class="layui-icon layui-icon-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--商品列表（购物车、订单结算）-->
+        <div class="shopList">
+            <!--默认显示的，购物车-->
+            <div class="wrapper" id="BScroll">
+                <div class="list content" id="scrollShopCart">
+                    <!--<div class="item" data-id="1" data-freight="10">
+                        &lt;!&ndash;多选按钮&ndash;&gt;
+                        <div class="leftCheck">
+                            <input type="checkbox">
+                        </div>
+                        &lt;!&ndash;商品展示&ndash;&gt;
+                        <div class="midContent">
+                            <div class="pic">
+                                <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                                     alt="">
+                            </div>
+                            &lt;!&ndash;标题、价格&ndash;&gt;
+                            <div class="title">
+                                <p class="tit">空调节能装置KLJA空调节能装置KLJA空调节能装置KLJA空调节能装置KLJA-30</p>
+                                <p class="price" data-price="34.5">
+                                    ￥
+                                    <i>69.00</i>
+                                </p>
+                            </div>
+                        </div>
+                        &lt;!&ndash;增减商品数量&ndash;&gt;
+                        <div class="right">
+                            <span class="jia">+</span>
+                            <span class="num">2</span>
+                            <span class="jian">-</span>
+                        </div>
+                    </div>
+                    <div class="item" data-id="2">
+                        &lt;!&ndash;多选按钮&ndash;&gt;
+                        <div class="leftCheck">
+                            <input type="checkbox">
+                        </div>
+                        &lt;!&ndash;商品展示&ndash;&gt;
+                        <div class="midContent">
+                            <div class="pic">
+                                <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                                     alt="">
+                            </div>
+                            &lt;!&ndash;标题、价格&ndash;&gt;
+                            <div class="title">
+                                <p class="tit">数据到工会费-30fsdf</p>
+                                <p class="price" data-price="69">
+                                    ￥
+                                    <i>69.00</i>
+                                </p>
+                            </div>
+                        </div>
+                        &lt;!&ndash;增减商品数量&ndash;&gt;
+                        <div class="right">
+                            <span class="jia">+</span>
+                            <span class="num">1</span>
+                            <span class="jian">-</span>
+                        </div>
+                    </div>
+                    <div class="item" data-id="3">
+                        &lt;!&ndash;多选按钮&ndash;&gt;
+                        <div class="leftCheck">
+                            <input type="checkbox">
+                        </div>
+                        &lt;!&ndash;商品展示&ndash;&gt;
+                        <div class="midContent">
+                            <div class="pic">
+                                <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                                     alt="">
+                            </div>
+                            &lt;!&ndash;标题、价格&ndash;&gt;
+                            <div class="title">
+                                <p class="tit">好的个梵蒂冈-30</p>
+                                <p class="price" data-price="696">
+                                    ￥
+                                    <i>696.00</i>
+                                </p>
+                            </div>
+                        </div>
+                        &lt;!&ndash;增减商品数量&ndash;&gt;
+                        <div class="right">
+                            <span class="jia">+</span>
+                            <span class="num">1</span>
+                            <span class="jian">-</span>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!--默认隐藏的，订单结算-->
+            <div class="wrapper" id="BScroll2">
+                <div id="scrollSettlement">
+                    <!--收货信息-->
+                    <div class="ReceivingInfo">
+                        <div class="left">
+                            <img src="../asset/images/locationIcon.png" alt="">
+                        </div>
+
+                        <div class="right">
+                            <p class="basic">
+                                <span class="userName">李四</span>
+                                <span class="phone">13000000000</span>
+                            </p>
+                            <p class="location">安徽省淮南市田家庵区上品印象饕街A3-2323</p>
+                            <p class="updateLocationBtn">修改地址</p>
+                        </div>
+                    </div>
+
+                    <!--商品列表-->
+                    <div class="settlementShopList">
+
+                        <!--<div class="settlementItem">
+                            &lt;!&ndash;主图&ndash;&gt;
+                            <div class="left">
+                                <div class="pic">
+                                    <img src="../asset/images/economyDevice_bg.png" alt="">
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品信息&ndash;&gt;
+                            <div class="right">
+                                &lt;!&ndash;标题&ndash;&gt;
+                                <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                                &lt;!&ndash;价格和数量&ndash;&gt;
+                                <div class="priceAndNum">
+                                    &lt;!&ndash;金额&ndash;&gt;
+                                    <p class="price">
+                                        ￥ <span>869.00</span>
+                                    </p>
+
+                                    &lt;!&ndash;购买数量&ndash;&gt;
+                                    <p class="num">x3</p>
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品小计&ndash;&gt;
+                            <div class="bottom">
+                                <div class="yunFei">
+                                    含运费： ￥<span>10.00</span>
+                                </div>
+                                <div class="xiaoJi">
+                                    小计： <span class="fontRed">￥ <i>1000.00</i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settlementItem">
+                            &lt;!&ndash;主图&ndash;&gt;
+                            <div class="left">
+                                <div class="pic">
+                                    <img src="../asset/images/economyDevice_bg.png" alt="">
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品信息&ndash;&gt;
+                            <div class="right">
+                                &lt;!&ndash;标题&ndash;&gt;
+                                <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                                &lt;!&ndash;价格和数量&ndash;&gt;
+                                <div class="priceAndNum">
+                                    &lt;!&ndash;金额&ndash;&gt;
+                                    <p class="price">
+                                        ￥ <span>869.00</span>
+                                    </p>
+
+                                    &lt;!&ndash;购买数量&ndash;&gt;
+                                    <p class="num">x3</p>
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品小计&ndash;&gt;
+                            <div class="bottom">
+                                <div class="yunFei">
+                                    含运费： ￥<span>10.00</span>
+                                </div>
+                                <div class="xiaoJi">
+                                    小计： <span class="fontRed">￥ <i>1000.00</i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settlementItem">
+                            &lt;!&ndash;主图&ndash;&gt;
+                            <div class="left">
+                                <div class="pic">
+                                    <img src="../asset/images/economyDevice_bg.png" alt="">
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品信息&ndash;&gt;
+                            <div class="right">
+                                &lt;!&ndash;标题&ndash;&gt;
+                                <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                                &lt;!&ndash;价格和数量&ndash;&gt;
+                                <div class="priceAndNum">
+                                    &lt;!&ndash;金额&ndash;&gt;
+                                    <p class="price">
+                                        ￥ <span>869.00</span>
+                                    </p>
+
+                                    &lt;!&ndash;购买数量&ndash;&gt;
+                                    <p class="num">x3</p>
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品小计&ndash;&gt;
+                            <div class="bottom">
+                                <div class="yunFei">
+                                    含运费： ￥<span>10.00</span>
+                                </div>
+                                <div class="xiaoJi">
+                                    小计： <span class="fontRed">￥ <i>1000.00</i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settlementItem">
+                            &lt;!&ndash;主图&ndash;&gt;
+                            <div class="left">
+                                <div class="pic">
+                                    <img src="../asset/images/economyDevice_bg.png" alt="">
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品信息&ndash;&gt;
+                            <div class="right">
+                                &lt;!&ndash;标题&ndash;&gt;
+                                <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                                &lt;!&ndash;价格和数量&ndash;&gt;
+                                <div class="priceAndNum">
+                                    &lt;!&ndash;金额&ndash;&gt;
+                                    <p class="price">
+                                        ￥ <span>869.00</span>
+                                    </p>
+
+                                    &lt;!&ndash;购买数量&ndash;&gt;
+                                    <p class="num">x3</p>
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品小计&ndash;&gt;
+                            <div class="bottom">
+                                <div class="yunFei">
+                                    含运费： ￥<span>10.00</span>
+                                </div>
+                                <div class="xiaoJi">
+                                    小计： <span class="fontRed">￥ <i>1000.00</i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settlementItem">
+                            &lt;!&ndash;主图&ndash;&gt;
+                            <div class="left">
+                                <div class="pic">
+                                    <img src="../asset/images/economyDevice_bg.png" alt="">
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品信息&ndash;&gt;
+                            <div class="right">
+                                &lt;!&ndash;标题&ndash;&gt;
+                                <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                                &lt;!&ndash;价格和数量&ndash;&gt;
+                                <div class="priceAndNum">
+                                    &lt;!&ndash;金额&ndash;&gt;
+                                    <p class="price">
+                                        ￥ <span>869.00</span>
+                                    </p>
+
+                                    &lt;!&ndash;购买数量&ndash;&gt;
+                                    <p class="num">x3</p>
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品小计&ndash;&gt;
+                            <div class="bottom">
+                                <div class="yunFei">
+                                    含运费： ￥<span>10.00</span>
+                                </div>
+                                <div class="xiaoJi">
+                                    小计： <span class="fontRed">￥ <i>1000.00</i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settlementItem">
+                            &lt;!&ndash;主图&ndash;&gt;
+                            <div class="left">
+                                <div class="pic">
+                                    <img src="../asset/images/economyDevice_bg.png" alt="">
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品信息&ndash;&gt;
+                            <div class="right">
+                                &lt;!&ndash;标题&ndash;&gt;
+                                <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                                &lt;!&ndash;价格和数量&ndash;&gt;
+                                <div class="priceAndNum">
+                                    &lt;!&ndash;金额&ndash;&gt;
+                                    <p class="price">
+                                        ￥ <span>869.00</span>
+                                    </p>
+
+                                    &lt;!&ndash;购买数量&ndash;&gt;
+                                    <p class="num">x3</p>
+                                </div>
+                            </div>
+
+                            &lt;!&ndash;商品小计&ndash;&gt;
+                            <div class="bottom">
+                                <div class="yunFei">
+                                    含运费： ￥<span>10.00</span>
+                                </div>
+                                <div class="xiaoJi">
+                                    小计： <span class="fontRed">￥ <i>1000.00</i></span>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--默认显示的底部按钮-->
+        <div class="showBottomBtn">
+            <div class="bottomBtn">
+                <div class="left">
+                    已选商品 <span class="fontRed totalNum">0</span> 件
+                    合计: <span class="fontRed totalPrice">￥0</span>
+                </div>
+                <div class="jieSuan">结算</div>
+            </div>
+        </div>
+
+        <!--默认隐藏的底部按钮-->
+        <div class="hideBottomBtn">
+            <!--支付方式-->
+            <div class="payType">
+                <span class="on">微信</span>
+                <span>支付宝</span>
+            </div>
+
+            <!--按钮-->
+            <div class="bottomBtn">
+                <div class="left">
+                    合计: <span class="fontRed totalPrice">￥0</span>
+                </div>
+                <div class="right">
+                    <div class="goBackShowCart">返回上一页</div>
+                    <div class="submitDingDan">提交订单</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--修改地址的弹窗-->
+<div id="formBox">
+    <form class="layui-form" action="javascript:;">
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-block">
+                <input type="text" name="userName" lay-verify="required" autocomplete="off" placeholder="请输入姓名"
+                       class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机号码</label>
+            <div class="layui-input-block">
+                <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" placeholder="请输入手机号码"
+                       class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">收货地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="receivingSite" lay-verify="required" autocomplete="off" placeholder="请输入收货地址"
+                       class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn submitBtn" lay-submit="" lay-filter="submitInfo">确认修改</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--支付的弹窗-->
+<div id="payPopUp">
+    <div id="QRcodeBox" class="container mtm">
+        <div class="text-center pay-top"><p class="text-danger">使用<span class="payType">微信</span>“扫一扫”下方二维码，完成付款</p>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+                <span class="pull-left">订单号：123456</span>
+                <span class="pull-right">总金额：0.01元</span>
+            </div>
+            <div class="panel-body text-center" style="display: flex;">
+                <div style="margin: 0 auto;" id="qrcode" title="weixin://wxpay/bizpayurl?pr=RlgVbRK00">
+                    <canvas width="200" height="200" style="display: none;"></canvas>
+                    <img class="codeImg"
+                         src="data:image/png;base64,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"
+                         style="display: block;"></div>
+            </div>
+            <div class="panel-footer text-success text-center">请使用<span class="payType">微信</span>扫描 二维码以完成支付</div>
+        </div>
+        <div class="progress" style="display: none;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="10"
+                 aria-valuemin="10" aria-valuemax="100" style="width: 1%"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+    var $ = null;
+    var layer = null;
+    layui.use(['element', 'layer'], function () {
+        $ = layui.$;
+        layer = layui.layer;
+    });
+
+    var page = {
+        /*点击立即购买*/
+        PcClickGouMai: function (data) {
+            console.log(data, "点击立即购买");
+            // console.log(this)
+        },
+
+        /*点击加入购物车*/
+        PcClickJiaRuGouWuChe: function (data, callback) {
+            console.log(data, "点击加入购物车");
+            //http://192.168.0.8:88/index/product/addShopCart   加入购物车
+            //http://192.168.0.8:88/index/product/getShopCart   获取购物车
+            //http://192.168.0.8:88/index/product/editShopCart   修改商品数量
+            //http://192.168.0.8:88/index/product/delShopCart   删除商品数量
+
+            var user_id = $("input[name=user_id]").val();
+            if (!user_id) {
+                layer.msg('未登录，请先登录！', {icon: 2, time: 1500}, function () {
+                    location.href = "{:url('member/register')}"
+                });
+                return false;
+            }
+            data.name = $('input[name="userName"]').val();
+            data.phone = $('input[name="phone"]').val();
+            data.address = $('input[name="receivingSite"]').val();
+
+
+            //加入购物车
+            $.ajax({
+                url: "/api/index/product/addShopCart",
+                method: "post",
+                data: {user_id: user_id, product_id: data.id, name: data.name, phone: data.phone, address: data.address},
+                success: function () {
+                    //获取购物车
+                    $.ajax({
+                        url: "/api/index/product/getShopCart",
+                        method: "post",
+                        data: {
+                            user_id: 1,
+                        },
+                        success: function (getShopCart) {
+                            //解析购物车中的商品
+                            let shopList = JSON.parse(getShopCart).data;
+
+                            //购物车的商品
+                            let goodsList = shopList.map(item => {
+                                return {
+                                    id: item.id,//商品id
+                                    product_title: item.product.product_title,//商品标题
+                                    xiaoJi: item.price,//小计
+                                    product_price: item.product.product_price,//单价
+                                    product_num: item.product_num,//加购数量
+                                    product_imgurl: item.product.product_imgurl,//商品图片
+                                    freight: 0,//运费
+                                }
+                            });
+                            callback(goodsList);
+                        }
+                    });
+                }
+            });
+        },
+
+        /*点击删除*/
+        PcClickProduct: function (data) {
+            console.log(data, '点击删除');
+            //删除购物车数据
+            $.ajax({
+                url: "/api/index/product/delShopCart",
+                method: "post",
+                data: {
+                    data,
+                },
+                success: function (delShopCart) {
+                    console.log(JSON.parse(delShopCart));
+                }
+            });
+        },
+
+        /*修改商品数量时触发*/
+        PcUpdateNum: function (data) {
+            console.log(data, '修改商品数量');
+            //删除购物车数据
+            $.ajax({
+                url: "/api/index/product/editShopCart",
+                method: "post",
+                data: {
+                    ...data,
+                    product_num: data.num,
+                },
+                success: function (editShopCart) {
+                    console.log(JSON.parse(editShopCart));
+                }
+            });
+        },
+
+        /*提交修改的地址时触发*/
+        PcUpdateLocationSubmit: function (data) {
+            console.log(data, "提交修改的地址时触发");
+            // console.log(this)
+        },
+
+        /*点击提交订单时触发*/
+        PcSubmitDingDan: function (data, callback) {
+            console.log(data, "点击提交订单时触发");
+
+            // 支付接口：http://192.168.0.8:88/index/pay/pay
+            $.ajax({
+                url: "/api/index/pay/pay",
+                method: "post",
+                data: data,
+                success: function (pay) {
+                    let payData = JSON.parse(pay).data;
+                    callback({
+                        codeUrl: payData.code_url,//二维码链接
+                        orderNum: payData.order_no,//订单号
+                        totalPrice: payData.price,//总金额
+                    });
+                }
+            });
+        },
+
+        /*移动端点击加入购物车时触发*/
+        MobileJoinShopCart: function (data) {
+            console.log(data, '移动端点击加入购物车时触发');
+
+            //加入购物车
+            $.ajax({
+                url: "/api/index/product/addShopCart",
+                method: "post",
+                data: {
+                    user_id: 1,
+                    product_id: data.id,
+                },
+                success: function (addShopCart) {
+                    console.log(addShopCart);
+                }
+            });
+        },
+
+        /*移动端点击立即购买时触发*/
+        MobilePromptlyBuy: function (data) {
+            console.log(data, '移动端点击立即购买时触发');
+        },
+    };
+</script>
+</html>

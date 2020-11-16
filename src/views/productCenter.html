@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <title>产品中心</title>
+</head>
+<body>
+<!--头部-->
+<div id="header">
+    <!--默认显示的-->
+    <div class="box">
+        <div class="logo">
+            <img src="../asset/images/logo.png" alt="">
+        </div>
+
+        <!--导航-->
+        <div class="tabBar">
+            <ul class="layui-nav">
+                <li class="layui-nav-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--登录-->
+        <div class="loginBox">
+            <div class="top">
+                <p class="isShow">
+                    <span class="register">
+                        <a href="/register.html">注册</a>
+                    </span>
+                    <span class="login">
+                        <a href="/register.html">登录</a>
+                    </span>
+                </p>
+                <p class="isHide">
+                    <a href="">
+                        <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1425010324,3983996314&fm=26&gp=0.jpg" class="photo" alt="">
+                        <span class="userName">小明</span>
+                    </a>
+                </p>
+            </div>
+            <div class="bottom">
+                <input type="text" placeholder="搜索" autocomplete="off" class="layui-input">
+                <div class="search">
+                    <i class="layui-icon layui-icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--默认隐藏的-->
+    <div class="hideBox">
+        <div class="header">
+            <div class="logo">
+                <img src="../asset/images/phone_logo.png" alt="">
+            </div>
+            <div class="right_icon">
+                <i class="layui-icon layui-icon-search"></i>
+                <i class="layui-icon layui-icon-shrink-right"></i>
+            </div>
+        </div>
+
+        <!--隐藏的搜索框-->
+        <div class="searchInput">
+            <input type="text" class="layui-input">
+            <i class="layui-icon layui-icon-search"></i>
+        </div>
+
+        <!--隐藏的导航栏-->
+        <div class="navList">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/personalCenter.html">个人中心</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="PageContent">
+    <!--横幅-->
+    <div class="streamer">
+        <h1 class="title">产品中心</h1>
+    </div>
+
+    <!--隐藏的导航-->
+    <div class="hideNavList">
+        <div id="wrapper">
+            <ul class="content">
+                <li class="nav-item nav-this">
+                    <span>空调节能装置</span>
+                </li>
+                <li class="nav-item">
+                    <span>空调节能</span>
+                </li>
+                <li class="nav-item">
+                    <span>空调节</span>
+                </li>
+                <li class="nav-item">
+                    <span>空调节</span>
+                </li>
+                <li class="nav-item">
+                    <span>空调节</span>
+                </li>
+                <li class="nav-item">
+                    <span>空调节</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--商品-->
+    <div class="shopContent">
+        <!--面包屑导航-->
+        <div class="breadcrumb">
+            <span class="layui-breadcrumb" lay-separator=">">
+              <a href="/">首页</a>
+              <a><cite>产品中心</cite></a>
+            </span>
+        </div>
+
+        <!--导航栏-->
+        <div class="leftNav">
+            <div class="navTitle">产品中心</div>
+            <div class="navList">
+                <div class="navItem nav-this">
+                    <span>空调节能装置</span>
+                    <span> >> </span>
+                </div>
+            </div>
+            <div class="navList">
+                <div class="navItem">
+                    <span>空调装置</span>
+                    <span> >> </span>
+                </div>
+            </div>
+            <div class="navList">
+                <div class="navItem">
+                    <span>空装置</span>
+                    <span> >> </span>
+                </div>
+            </div>
+            <div class="navList">
+                <div class="navItem">
+                    <span>空调</span>
+                    <span> >> </span>
+                </div>
+            </div>
+        </div>
+
+        <!--商品展示-->
+        <div class="rightShop">
+            <div class="shopList">
+                <div class="shopItem">
+                    <a href="/productDetails.html">
+                        <!--主图-->
+                        <div class="pic">
+                            <img src="../asset/images/streamer_1.png" alt="">
+                        </div>
+                        <!--标题-->
+                        <div class="shopTitle">
+                            空调节能装置  KLJA-30
+                        </div>
+                        <!--价格-->
+                        <div class="price">￥ 869.00</div>
+                    </a>
+                </div>
+            </div>
+
+            <!--分页-->
+            <div class="pageDome">
+                <div id="paging1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--默认显示的底部-->
+<div id="footer">
+    <div class="box1">
+        <div class="left">
+            <div class="top">
+                <a href="">首页</a> | <a href="">关于中冠双振</a> | <a href="">产品中心</a> | <a href="">新闻资讯</a> | <a
+                    href="">合作加盟</a> | <a href="">加入我们</a> | <a href="">联系我们</a>
+            </div>
+            <div class="info">
+                <p>全国热线：0554-8222789</p>
+                <p>招商销售电话：18055411655</p>
+                <p>地址：安徽省淮南市山南新区泰丰大街科技企业孵化器一号楼4层 / 上海浦东新区万安街332号</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="code">
+                <div class="pic">
+                    <img src="../asset/images/productCode.png" alt="">
+                </div>
+                <div class="title">产品视频</div>
+            </div>
+            <div class="code">
+                <div class="pic">
+                    <img src="../asset/images/installCode.png" alt="">
+                </div>
+                <div class="title">安装视频</div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        Copyright © 2017 All Rights Reserved 方大网络 皖ICP备17028853号-1 技术支持：淮南方大网络技术有限公司
+    </div>
+</div>
+<!--默认隐藏的底部-->
+<div id="hideFooter">
+    <div class="info">
+        <p>
+            <span>全国热线：</span>
+            <span>0554-8222789</span>
+        </p>
+        <p>
+            <span>招商销售电话：</span>
+            <span>18055411655</span>
+        </p>
+        <p>
+            <span>地址：</span>
+            <span>安徽省淮南市山南新区泰丰大街科技企业孵化器一号楼4层上海浦东新区万安街332号</span>
+        </p>
+    </div>
+
+    <div class="codeBox">
+        <div class="code">
+            <div class="pic">
+                <img src="../asset/images/productCode.png" alt="">
+            </div>
+            <div class="title">产品视频</div>
+        </div>
+        <div class="code">
+            <div class="pic">
+                <img src="../asset/images/installCode.png" alt="">
+            </div>
+            <div class="title">安装视频</div>
+        </div>
+    </div>
+
+    <div class="navList">
+        <a href="">产品中心</a> |
+        <a href="">新闻资讯</a> |
+        <a href="">合作加盟</a> |
+        <a href="">联系我们</a>
+    </div>
+
+    <div class="ICP">
+        <span>皖ICP备17028853号-1</span>
+        <span>技术支持：淮南方大网络技术有限公司</span>
+    </div>
+</div>
+
+</body>
+<script>
+    layui.use(['element', 'laypage'], function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+        var laypage = layui.laypage;
+
+        /*分页*/
+        laypage.render({
+            elem: 'paging1',
+            count: 100,
+            theme: '#87b72a',
+        });
+    });
+
+</script>
+</html>

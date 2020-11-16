@@ -1,0 +1,193 @@
+@import "./common";
+
+#box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../asset/images/registerBg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .midBox {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1007px;
+    height: 718px;
+    margin: auto;
+
+    .logo {
+      margin-bottom: 80px;
+      padding-left: 100px;
+      box-sizing: border-box;
+    }
+
+    .formBox {
+      width: 100%;
+      height: 580px;
+      background-image: url("../asset/images/registerForm.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      .right {
+        float: right;
+        width: 400px;
+        height: 100%;
+        box-sizing: border-box;
+        margin-right: 150px;
+        margin-top: 100px;
+
+        /*tab栏*/
+        .layui-tab {
+          .layui-tab-title {
+            margin: 0 auto 60px;
+            color: $font_color4;
+            text-align: center;
+            border-bottom-width: 0;
+            li{
+              width: 40%;
+              text-align: center;
+            }
+
+            .layui-this {
+              color: $theme_color4;
+            }
+
+            .layui-this:after {
+              border-bottom: 2px solid $theme_color4;
+            }
+
+            li:after {
+              position: absolute;
+              left: 0;
+              top: 0;
+              content: '';
+              width: 100%;
+              height: 41px;
+              border-radius: 2px 2px 0 0;
+              box-sizing: border-box;
+              pointer-events: none;
+              border-bottom: 2px solid $border_color7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*表单*/
+.layui-form{
+  width: 100%;
+  .layui-form-item{
+    position: relative;
+
+    .layui-form-label{
+      position: relative;
+      width: 50px;
+      padding: 9px 0;
+      text-align: center;
+    }
+    .layui-form-label::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      right: 0;
+      width: 1px;
+      background-color: $border_color8;
+    }
+    .layui-input-block {
+      position: relative;
+      margin-left: 60px;
+      input{
+        border: 0;
+      }
+
+      .getVerifyCode{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        button{
+          background-color: $theme_color4;
+        }
+      }
+    }
+  }
+  .layui-form-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $border_color7;
+  }
+
+  .layui-form-item.itemOn{
+    color: $theme_color4;
+    .layui-form-label::after{
+      background-color: $theme_color4;
+    }
+  }
+  .layui-form-item.itemOn::after{
+    background-color: $theme_color4;
+  }
+
+  /*提交按钮*/
+  .layui-form-item.submitBox{
+    margin-top: 50px;
+
+    .layui-btn {
+      width: 226px;
+      height: 55px;
+      border-right: 20px;
+      background-color: $theme_color4;
+      box-sizing: border-box;
+      border-radius: 30px;
+      font-size: 18px;
+    }
+  }
+  .layui-form-item.submitBox::after{
+    display: none;
+  }
+
+
+  .custom{
+    width: 100%;
+    overflow: hidden;
+    color: $font_color9;
+    .jiZhu{
+      float: left;
+      input{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .layui-form-checkbox{
+        display: none;
+      }
+    }
+    .wangJi{
+      float: right;
+      span{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/*隐藏的表单*/
+#hideForm{
+  display: none;
+  padding: 20px;
+  .submitBox .layui-input-block{
+    text-align: center;
+    margin: 0;
+  }
+}

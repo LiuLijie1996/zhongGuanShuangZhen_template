@@ -1,0 +1,81 @@
+@import "../asset/iconfont/iconfont.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.fontRed{
+  color: red !important;
+}
+
+
+/*layui主题颜色*/
+.layui-tab-brief > .layui-tab-title .layui-this{
+  color: #87b72a;
+}
+
+.layui-tab-brief > .layui-tab-more li.layui-this:after, .layui-tab-brief > .layui-tab-title .layui-this:after {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #93be3f;
+}
+
+@media (max-width: 750px) {
+  #PageContent {
+    padding-top: 0.42rem !important;
+  }
+}
+
+
+/*主题色*/
+$theme_color1: #87b72a;
+$theme_color2: #93be3f;
+$theme_color3: #c4dd93;
+$theme_color4: #4190f6;
+
+
+/*-----------边框颜色-------------*/
+$border_color1: #707070;
+$border_color2: #dbdbdb;
+$border_color3: #333333;
+$border_color4: #eee;
+$border_color5: #e6e6e6;
+$border_color6: #efefef;
+$border_color7: #dfdfdf;
+$border_color8: #c9c9c9;
+$border_color9: #ebebeb;
+
+
+/*-----------阴影-------------*/
+$shadow_color1: rgba(165, 199, 251, 0.5);
+
+
+/*---------文字颜色---------*/
+$font_color1: #000;
+$font_color2: #111;
+$font_color3: #333;
+$font_color4: #666;
+$font_color5: #707070;
+$font_color6: #999;
+$font_color7: #ccc;
+$font_color8: #ff0000;
+$font_color9: #aaaaaa;
+
+
+/*-----------背景颜色-------------*/
+$bgc_color1: #f4f4f4;
+$bgc_color2: #333333;
+$bgc_color3: #f4f9f9;
+$bgc_color4: #f2f9e5;
+$bgc_color5: #f7f5f6;
+$bgc_color6: #ffeded;
+$bgc_color7: #fafafa;
+
+/*-----------动画时间-------------*/
+$transition:0.2s;

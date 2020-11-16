@@ -1,0 +1,362 @@
+@import "./header";
+@import "./footer";
+#header {
+    border-bottom: 10px solid $theme_color1;
+}
+
+#PageContent {
+    padding-top: 140px;
+}
+
+//pc端显示的内容
+#PcBox {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+    overflow: hidden;
+    .leftBox {
+        float: left;
+        width: 280px;
+        /*用户信息*/
+        .userInfo {
+            width: 100%;
+            height: 206px;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: #fff;
+            /*头像*/
+            .photo {
+                text-align: center;
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+            }
+            /*用户名*/
+            .userName {
+                text-align: center;
+                font-size: 16px;
+                color: $font_color4;
+                margin-top: 24px;
+            }
+            /*修改资料按钮*/
+            .updateInfoBtn {
+                text-align: center;
+                margin-top: 24px;
+                button {
+                    width: 150px;
+                    line-height: 32px;
+                    font-size: 14px;
+                    background-color: $theme_color1;
+                }
+            }
+        }
+        /*tabBar*/
+        .tabBar {
+            width: 100%;
+            height: 174px;
+            background-color: #fff;
+            margin-top: 17px;
+            border-radius: 5px;
+            overflow: hidden;
+            p {
+                width: 100%;
+                line-height: 55px;
+                padding-left: 30px;
+                box-sizing: border-box;
+                font-size: 16px;
+                cursor: pointer;
+                color: $font_color4;
+            }
+            p.select {
+                color: #fff;
+                background-color: $theme_color1;
+            }
+        }
+    }
+    .rightBox {
+        float: left;
+        width: 899px;
+        margin-left: 19px;
+        background-color: #fff;
+        .layui-tab {
+            background: #fff;
+        }
+        /*我的购物车，我的收藏 对应的表格*/
+        .myShopCart,
+        .myCollect {
+            display: none;
+            padding: 10px 20px;
+            background-color: #fff;
+            .pic {
+                text-align: center;
+            }
+            /*交易操作*/
+            .dealOperate {
+                .layui-btn {
+                    width: 73px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0;
+                    text-align: center;
+                    background-color: $theme_color1;
+                }
+            }
+        }
+        /*全部订单对应的表格*/
+        .orderFormAll {
+            display: none;
+            /*产品名称*/
+            .productName {
+                /*主图*/
+                .pic {
+                    float: left;
+                    width: 50%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                /*标题*/
+                .title {
+                    float: right;
+                    width: 50%;
+                }
+            }
+            /*交易状态*/
+            .dealStatus {
+                .viewWuLiu {
+                    cursor: pointer;
+                }
+            }
+            /*交易操作*/
+            .dealOperate {
+                .layui-btn {
+                    width: 73px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0;
+                    text-align: center;
+                    background-color: $theme_color1;
+                }
+            }
+        }
+    }
+}
+
+//移动端显示的内容
+#mobileBox {
+    display: none;
+    width: 100%;
+    background-color: $bgc_color7;
+    .headerInfo {
+        width: 100%;
+        height: 1.275rem;
+        line-height: 1.275rem;
+        background-image: url("../asset/images/m_userInfoBg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        div {
+            float: left;
+            color: #fff;
+            font-size: 0.16rem;
+        }
+        .photo {
+            width: 0.5rem;
+            height: 0.5rem;
+            margin-left: 0.3rem;
+            img {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+            }
+        }
+        .userInfo {
+            margin-left: 0.2rem;
+        }
+    }
+    /*tab栏*/
+    .tabBar {
+        position: relative;
+        width: 100%;
+        height: 0.95rem;
+        margin-top: 0.1rem;
+        background-color: #fff;
+        overflow: hidden;
+        .tabItem {
+            width: 25%;
+            float: left;
+            height: 0.95rem;
+            font-size: 0.12rem;
+            color: $font_color4;
+            text-align: center;
+            padding-top: 0.16rem;
+            box-sizing: border-box;
+            .tit {
+                margin-top: 0.1rem;
+            }
+            .daiFuKuan img {
+                width: .325rem;
+                height: .325rem;
+            }
+            .daiFaHuo img {
+                width: .385rem;
+                height: .325rem;
+            }
+            .daiShouHuo img {
+                width: .37rem;
+                height: .32rem;
+            }
+            .allDingDan img {
+                width: .255rem;
+                height: .325rem;
+            }
+        }
+    }
+    /*导航列表*/
+    .navList {
+        line-height: 0.5rem;
+        width: 100%;
+        background-color: #fff;
+        .navItem {
+            width: 100%;
+            overflow: hidden;
+            padding: 0 0.2rem;
+            box-sizing: border-box;
+            border-top: 1px solid $border_color9;
+            font-size: 0.12rem;
+            color: $font_color4;
+            i {
+                float: right;
+            }
+        }
+    }
+}
+
+
+/*表单*/
+
+.layui-form {
+    width: 100%;
+    .layui-form-item {
+        position: relative;
+        .layui-form-label {
+            position: relative;
+            width: 50px;
+            padding: 9px 0;
+            text-align: center;
+        }
+        .layui-form-label::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            right: 0;
+            width: 1px;
+            background-color: $border_color8;
+        }
+        .layui-input-block {
+            position: relative;
+            margin-left: 60px;
+            input {
+                border: 0;
+            }
+            .getVerifyCode {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                background-color: #fff;
+                button {
+                    background-color: $theme_color4;
+                }
+            }
+        }
+    }
+    .layui-form-item::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: $border_color7;
+    }
+    .layui-form-item.itemOn {
+        color: $theme_color4;
+        .layui-form-label::after {
+            background-color: $theme_color4;
+        }
+    }
+    .layui-form-item.itemOn::after {
+        background-color: $theme_color4;
+    }
+    /*提交按钮*/
+    .layui-form-item.submitBox {
+        margin-top: 50px;
+        .layui-btn {
+            width: 226px;
+            height: 55px;
+            border-right: 20px;
+            background-color: $theme_color4;
+            box-sizing: border-box;
+            border-radius: 30px;
+            font-size: 18px;
+        }
+    }
+    .layui-form-item.submitBox::after {
+        display: none;
+    }
+    .custom {
+        width: 100%;
+        overflow: hidden;
+        color: $font_color9;
+        .jiZhu {
+            float: left;
+            input {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .layui-form-checkbox {
+                display: none;
+            }
+        }
+        .wangJi {
+            float: right;
+            span {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+/*隐藏的表单*/
+
+#hideForm {
+    display: none;
+    padding: 20px;
+    .submitBox .layui-input-block {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+
+/*隐藏的物流信息*/
+
+#showWuLiuInfo {
+    display: none;
+    padding: 20px;
+}
+
+@media (max-width: 750px) {
+    #PcBox {
+        display: none;
+    }
+    #mobileBox {
+        display: block;
+    }
+}

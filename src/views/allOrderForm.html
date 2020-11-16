@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <title>订单列表</title>
+</head>
+<body>
+<!--移动端带返回箭头的头部-->
+<div id="detailHeader">
+    <i class="layui-icon layui-icon-left" onclick="window.history.go(-1);"></i>
+    <span>订单列表</span>
+</div>
+
+<!--移动端的导航-->
+<div class="hideNavList">
+    <div id="wrapper">
+        <ul class="content">
+            <li class="nav-item nav-this">
+                <span>全部</span>
+            </li>
+            <li class="nav-item">
+                <span>待付款</span>
+            </li>
+            <li class="nav-item">
+                <span>待发货</span>
+            </li>
+            <li class="nav-item">
+                <span>待收货</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--页面内容-->
+<div id="PageContent">
+    <!--全部：商品列表-->
+    <div class="wrapper">
+        <div class="scrollSettlement">
+            <!--商品列表-->
+            <div class="settlementShopList">
+                <div class="settlementItem">
+                    <!--主图-->
+                    <div class="left">
+                        <div class="pic">
+                            <img src="../asset/images/economyDevice_bg.png" alt="">
+                        </div>
+                    </div>
+
+                    <!--商品信息-->
+                    <div class="right">
+                        <!--标题-->
+                        <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                        <!--价格和数量-->
+                        <div class="priceAndNum">
+                            <!--金额-->
+                            <p class="price">
+                                ￥ <span>869.00</span>
+                            </p>
+
+                            <!--购买数量-->
+                            <p class="num">x3</p>
+                        </div>
+                    </div>
+
+                    <!--商品小计-->
+                    <div class="bottom">
+                        <div class="yunFei">
+                            含运费： ￥<span>10.00</span>
+                        </div>
+                        <div class="xiaoJi">
+                            <button class="leftBtn layui-btn layui-btn-warm">
+                                <!--立即付款-->
+                                确认收货
+                            </button>
+
+                            <p class="right">
+                                小计： <span class="fontRed">￥ <i>1000.00</i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--待付款：商品列表-->
+    <div class="wrapper">
+        <div class="scrollSettlement">
+            <!--商品列表-->
+            <div class="settlementShopList">
+                <div class="settlementItem">
+                    <!--主图-->
+                    <div class="left">
+                        <div class="pic">
+                            <img src="../asset/images/economyDevice_bg.png" alt="">
+                        </div>
+                    </div>
+
+                    <!--商品信息-->
+                    <div class="right">
+                        <!--标题-->
+                        <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                        <!--价格和数量-->
+                        <div class="priceAndNum">
+                            <!--金额-->
+                            <p class="price">
+                                ￥ <span>869.00</span>
+                            </p>
+
+                            <!--购买数量-->
+                            <p class="num">x3</p>
+                        </div>
+                    </div>
+
+                    <!--商品小计-->
+                    <div class="bottom">
+                        <div class="yunFei">
+                            含运费： ￥<span>10.00</span>
+                        </div>
+                        <div class="xiaoJi">
+                            <button class="leftBtn layui-btn layui-btn-warm">
+                                <!--立即付款-->
+                                确认收货
+                            </button>
+
+                            <p class="right">
+                                小计： <span class="fontRed">￥ <i>2000.00</i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--待发货：商品列表-->
+    <div class="wrapper">
+        <div class="scrollSettlement">
+            <!--商品列表-->
+            <div class="settlementShopList">
+                <div class="settlementItem">
+                    <!--主图-->
+                    <div class="left">
+                        <div class="pic">
+                            <img src="../asset/images/economyDevice_bg.png" alt="">
+                        </div>
+                    </div>
+
+                    <!--商品信息-->
+                    <div class="right">
+                        <!--标题-->
+                        <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                        <!--价格和数量-->
+                        <div class="priceAndNum">
+                            <!--金额-->
+                            <p class="price">
+                                ￥ <span>869.00</span>
+                            </p>
+
+                            <!--购买数量-->
+                            <p class="num">x3</p>
+                        </div>
+                    </div>
+
+                    <!--商品小计-->
+                    <div class="bottom">
+                        <div class="yunFei">
+                            含运费： ￥<span>10.00</span>
+                        </div>
+                        <div class="xiaoJi">
+                            <button class="leftBtn layui-btn layui-btn-warm">
+                                <!--立即付款-->
+                                确认收货
+                            </button>
+
+                            <p class="right">
+                                小计： <span class="fontRed">￥ <i>3000.00</i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--待收货：商品列表-->
+    <div class="wrapper">
+        <div class="scrollSettlement">
+            <!--商品列表-->
+            <div class="settlementShopList">
+                <div class="settlementItem">
+                    <!--主图-->
+                    <div class="left">
+                        <div class="pic">
+                            <img src="../asset/images/economyDevice_bg.png" alt="">
+                        </div>
+                    </div>
+
+                    <!--商品信息-->
+                    <div class="right">
+                        <!--标题-->
+                        <div class="title">空调节能装置空调节能装置空调节能装置空调节能装置 KLJA-30</div>
+                        <!--价格和数量-->
+                        <div class="priceAndNum">
+                            <!--金额-->
+                            <p class="price">
+                                ￥ <span>869.00</span>
+                            </p>
+
+                            <!--购买数量-->
+                            <p class="num">x3</p>
+                        </div>
+                    </div>
+
+                    <!--商品小计-->
+                    <div class="bottom">
+                        <div class="yunFei">
+                            含运费： ￥<span>10.00</span>
+                        </div>
+                        <div class="xiaoJi">
+                            <button class="leftBtn layui-btn layui-btn-warm">
+                                <!--立即付款-->
+                                确认收货
+                            </button>
+
+                            <p class="right">
+                                小计： <span class="fontRed">￥ <i>4000.00</i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--移动端底部-->
+<div id="hideFooter">
+    <div class="info">
+        <p>
+            <span>全国热线：</span>
+            <span>0554-8222789</span>
+        </p>
+        <p>
+            <span>招商销售电话：</span>
+            <span>18055411655</span>
+        </p>
+        <p>
+            <span>地址：</span>
+            <span>安徽省淮南市山南新区泰丰大街科技企业孵化器一号楼4层上海浦东新区万安街332号</span>
+        </p>
+    </div>
+
+    <div class="codeBox">
+        <div class="code">
+            <div class="pic">
+                <img src="../asset/images/productCode.png" alt="">
+            </div>
+            <div class="title">产品视频</div>
+        </div>
+        <div class="code">
+            <div class="pic">
+                <img src="../asset/images/installCode.png" alt="">
+            </div>
+            <div class="title">安装视频</div>
+        </div>
+    </div>
+
+    <div class="navList">
+        <a href="">产品中心</a> |
+        <a href="">新闻资讯</a> |
+        <a href="">合作加盟</a> |
+        <a href="">联系我们</a> |
+        <a href="/personalCenter.html">个人中心</a>
+    </div>
+
+    <div class="ICP">
+        <span>皖ICP备17028853号-1</span>
+        <span>技术支持：淮南方大网络技术有限公司</span>
+    </div>
+</div>
+</body>
+</html>

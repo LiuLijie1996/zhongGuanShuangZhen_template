@@ -1,0 +1,232 @@
+@import "./common";
+//@import "./footer";
+
+/*移动端的头部*/
+#detailHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0.42rem;
+  background-color: $theme_color1;
+  z-index: 999999;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  color: #fff;
+
+  i, span {
+    font-size: .16rem;
+    margin-right: 0.2rem;
+  }
+
+  i {
+    padding-top: 0.03rem;
+  }
+
+  .left-check{
+    label{
+      font-size: 0.12rem;
+      vertical-align: middle;
+    }
+
+    #checkAll{
+      vertical-align: middle;
+    }
+  }
+}
+
+//订单结算
+#BScroll2 {
+  padding-bottom: 0.6rem;
+
+
+  /*订单结算*/
+  #scrollSettlement {
+    background-color: $bgc_color7;
+
+    /*收货信息*/
+    .ReceivingInfo {
+      background-color: #fff;
+      overflow: hidden;
+      padding-top: 0.2rem;
+
+      .left {
+        float: left;
+        padding: 0 0.1rem;
+        width: 0.5rem;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .right {
+        float: left;
+        width: 3.25rem;
+        padding-right: 20px;
+        box-sizing: border-box;
+
+        /*基本信息*/
+        .basic {
+          font-size: 0.16rem;
+          color: $font_color3;
+        }
+
+        /*收货地址*/
+        .location {
+          font-size: 0.14rem;
+          color: $font_color4;
+          margin-top: 0.1rem;
+        }
+
+        /*修改地址按钮*/
+        .updateLocationBtn {
+          font-size: 0.14rem;
+          color: $theme_color1;
+          padding: 0.1rem 0;
+          text-align: right;
+          cursor: pointer;
+        }
+      }
+    }
+
+    /*商品列表*/
+    .settlementShopList {
+      margin-top: 0.05rem;
+
+      i {
+        font-style: normal;
+      }
+      .settlementItem:last-child{
+        padding-bottom: 0.3rem;
+      }
+      .settlementItem {
+        width: 100%;
+        padding: 0.13rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-top: 1px;
+        background-color: #fff;
+
+        /*主图*/
+        .left {
+          float: left;
+
+          .pic {
+            padding: 0.05rem;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+
+            img {
+              width: 0.5rem;
+              height: 0.5rem;
+            }
+          }
+        }
+
+        /*商品信息*/
+        .right {
+          float: left;
+          width: 2.5rem;
+          margin-left: 0.1rem;
+          font-size: 0.16rem;
+          color: $font_color3;
+
+          .title {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          /*价格和数量*/
+          .priceAndNum {
+            margin-top: 0.2rem;
+            overflow: hidden;
+
+            .price {
+              float: left;
+            }
+
+            .num {
+              float: right;
+              padding-top: 0.03rem;
+              font-size: 0.14rem;
+              color: $font_color4;
+            }
+          }
+        }
+
+        /*商品小计*/
+        .bottom {
+          float: left;
+          width: 100%;
+          margin-top: 0.14rem;
+          text-align: right;
+          font-size: 0.14rem;
+          color: $font_color4;
+
+          .xiaoJi {
+            margin-top: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*底部*/
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.8rem;
+
+  /*计数*/
+  .total-count{
+    display: flex;
+    justify-content: space-between;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-align: right;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+    span{
+      color: red;
+      margin-right: 0.03rem;
+    }
+  }
+
+  /*按钮*/
+  .btn-group {
+    height: 0.5rem;
+    display: flex;
+    color: #fff;
+    font-size: 0.15rem;
+
+    p {
+      flex: 1;
+      height: 100%;
+      line-height: 0.5rem;
+      text-align: center;
+      background-color: #1E9FFF;
+    }
+  }
+}
+
+/*弹窗需要的表单*/
+#formBox{
+  display: none;
+  padding: 0.2rem 0.5rem 0.2rem 0;
+
+  .submitBtn{
+    background-color: $theme_color1;
+  }
+}

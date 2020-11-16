@@ -1,0 +1,178 @@
+@import "./footer";
+
+/*移动端的头部*/
+#detailHeader {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0.42rem;
+  background-color: $theme_color1;
+  z-index: 999999;
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  color: #fff;
+
+  i, span {
+    font-size: .16rem;
+    margin-right: 0.2rem;
+  }
+
+  i {
+    padding-top: 0.03rem;
+  }
+}
+
+/*移动端的导航*/
+.hideNavList {
+  width: 100%;
+  height: .475rem;
+  line-height: .475rem;
+  background-color: $bgc_color4;
+  padding-top: .42rem;
+
+  #wrapper {
+    width: 100%;
+    height: 100%;
+
+    .content {
+      height: 100%;
+
+      li.nav-item {
+        float: left;
+        height: 100%;
+        padding: 0 0.15rem;
+
+        span {
+          transition: $transition;
+        }
+      }
+
+      li.nav-this {
+        color: $theme_color1;
+
+        span {
+          float: left;
+          height: .44rem;
+          border-bottom: 0.03rem solid $theme_color1;
+        }
+      }
+    }
+  }
+}
+
+/*页面内容--*/
+#PageContent {
+  padding: 0 !important;
+  .wrapper {
+    display: none;
+    /*订单结算*/
+    .scrollSettlement {
+      background-color: $bgc_color7;
+
+      /*商品列表*/
+      .settlementShopList {
+        margin-top: 10px;
+
+        i {
+          font-style: normal;
+        }
+        .settlementItem:last-child{
+          padding-bottom: 0.6rem;
+        }
+        .settlementItem {
+          width: 100%;
+          padding: 0.1rem;
+          box-sizing: border-box;
+          overflow: hidden;
+          background-color: #fff;
+          border-bottom: 1px solid $border_color6;
+
+          /*主图*/
+          .left {
+            float: left;
+
+            .pic {
+              padding: 0.1rem;
+              box-sizing: border-box;
+              border: 1px solid #ccc;
+
+              img {
+                width: 0.6rem;
+                height: 0.6rem;
+              }
+            }
+          }
+
+          /*商品信息*/
+          .right {
+            float: left;
+            width: 2.5rem;
+            margin-left: 0.1rem;
+            font-size: 0.15rem;
+            color: $font_color3;
+
+            .title {
+              width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+
+            /*价格和数量*/
+            .priceAndNum {
+              margin-top: 0.2rem;
+              overflow: hidden;
+
+              .price {
+                float: left;
+              }
+
+              .num {
+                float: right;
+                padding-top: 3px;
+                font-size: 0.14rem;
+                color: $font_color4;
+              }
+            }
+          }
+
+          /*商品小计*/
+          .bottom {
+            float: left;
+            width: 100%;
+            margin-top: 0.07rem;
+            text-align: right;
+            font-size: 0.14rem;
+            color: $font_color4;
+
+            .xiaoJi {
+              margin-top: 0.05rem;
+              overflow: hidden;
+
+              .leftBtn {
+                float: left;
+                font-size: .12rem;
+                padding: 0 0.05rem;
+                height: 0.2rem;
+                line-height: 0.2rem;
+              }
+
+              .right{
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrapper:nth-child(1){
+    display: block;
+  }
+}

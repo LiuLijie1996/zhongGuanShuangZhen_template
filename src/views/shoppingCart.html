@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <title>购物车</title>
+</head>
+<body>
+<!--移动端带返回箭头的头部-->
+<div id="detailHeader">
+    <p>
+        <i class="layui-icon layui-icon-left" onclick="window.history.go(-1);"></i>
+        <span>购物车</span>
+    </p>
+
+    <p class="left-check">
+        <input type="checkbox" id="checkAll">
+        <label for="checkAll">全选</label>
+    </p>
+</div>
+
+<div id="PageContent">
+    <div class="list content" id="scrollShopCart">
+        <div class="item" data-id="1" data-freight="0">
+            <!--多选按钮-->
+            <div class="leftCheck">
+                <input type="checkbox">
+            </div>
+            <!--商品展示-->
+            <div class="midContent">
+                <div class="pic">
+                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <!--标题、价格-->
+                <div class="title">
+                    <p class="tit">空调节能装置KLJA空调节能装置KLJA空调节能装置KLJA空调节能装置KLJA-30</p>
+                    <p class="price" data-price="34.5">
+                        ￥
+                        <i>69.00</i>
+                    </p>
+                </div>
+            </div>
+            <!--增减商品数量-->
+            <div class="right">
+                <span class="jia">+</span>
+                <span class="num">2</span>
+                <span class="jian">-</span>
+            </div>
+        </div>
+        <div class="item" data-id="2">
+            <!--多选按钮-->
+            <div class="leftCheck">
+                <input type="checkbox">
+            </div>
+            <!--商品展示-->
+            <div class="midContent">
+                <div class="pic">
+                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <!--标题、价格-->
+                <div class="title">
+                    <p class="tit">数据到工会费-30fsdf</p>
+                    <p class="price" data-price="69">
+                        ￥
+                        <i>69.00</i>
+                    </p>
+                </div>
+            </div>
+            <!--增减商品数量-->
+            <div class="right">
+                <span class="jia">+</span>
+                <span class="num">1</span>
+                <span class="jian">-</span>
+            </div>
+        </div>
+        <div class="item" data-id="3">
+            <!--多选按钮-->
+            <div class="leftCheck">
+                <input type="checkbox">
+            </div>
+            <!--商品展示-->
+            <div class="midContent">
+                <div class="pic">
+                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <!--标题、价格-->
+                <div class="title">
+                    <p class="tit">好的个梵蒂冈-30</p>
+                    <p class="price" data-price="696">
+                        ￥
+                        <i>696.00</i>
+                    </p>
+                </div>
+            </div>
+            <!--增减商品数量-->
+            <div class="right">
+                <span class="jia">+</span>
+                <span class="num">1</span>
+                <span class="jian">-</span>
+            </div>
+        </div>
+        <div class="item" data-id="4">
+            <!--多选按钮-->
+            <div class="leftCheck">
+                <input type="checkbox">
+            </div>
+            <!--商品展示-->
+            <div class="midContent">
+                <div class="pic">
+                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <!--标题、价格-->
+                <div class="title">
+                    <p class="tit">数据到工会费-30fsdf</p>
+                    <p class="price" data-price="69">
+                        ￥
+                        <i>69.00</i>
+                    </p>
+                </div>
+            </div>
+            <!--增减商品数量-->
+            <div class="right">
+                <span class="jia">+</span>
+                <span class="num">1</span>
+                <span class="jian">-</span>
+            </div>
+        </div>
+        <div class="item" data-id="5">
+            <!--多选按钮-->
+            <div class="leftCheck">
+                <input type="checkbox">
+            </div>
+            <!--商品展示-->
+            <div class="midContent">
+                <div class="pic">
+                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <!--标题、价格-->
+                <div class="title">
+                    <p class="tit">好的个梵蒂冈-30</p>
+                    <p class="price" data-price="696">
+                        ￥
+                        <i>696.00</i>
+                    </p>
+                </div>
+            </div>
+            <!--增减商品数量-->
+            <div class="right">
+                <span class="jia">+</span>
+                <span class="num">1</span>
+                <span class="jian">-</span>
+            </div>
+        </div>
+        <div class="item" data-id="6">
+            <!--多选按钮-->
+            <div class="leftCheck">
+                <input type="checkbox">
+            </div>
+            <!--商品展示-->
+            <div class="midContent">
+                <div class="pic">
+                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <!--标题、价格-->
+                <div class="title">
+                    <p class="tit">数据到工会费-30fsdf</p>
+                    <p class="price" data-price="69">
+                        ￥
+                        <i>69.00</i>
+                    </p>
+                </div>
+            </div>
+            <!--增减商品数量-->
+            <div class="right">
+                <span class="jia">+</span>
+                <span class="num">1</span>
+                <span class="jian">-</span>
+            </div>
+        </div>
+        <div class="item" data-id="7">
+            <!--多选按钮-->
+            <div class="leftCheck">
+                <input type="checkbox">
+            </div>
+            <!--商品展示-->
+            <div class="midContent">
+                <div class="pic">
+                    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3446442004,2207547936&fm=26&gp=0.jpg"
+                         alt="">
+                </div>
+                <!--标题、价格-->
+                <div class="title">
+                    <p class="tit">好的个梵蒂冈-30</p>
+                    <p class="price" data-price="696">
+                        ￥
+                        <i>696.00</i>
+                    </p>
+                </div>
+            </div>
+            <!--增减商品数量-->
+            <div class="right">
+                <span class="jia">+</span>
+                <span class="num">1</span>
+                <span class="jian">-</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部按钮-->
+<div id="footer">
+    <div class="total-count">
+        <p class="total-check-num">
+            已选：<span>0</span>件
+        </p>
+        <p class="total-price">
+            总金额：<span>0</span>元
+        </p>
+    </div>
+    <div class="btn-group">
+        <p class="deleteGoods">删除</p>
+        <p class="liJiGouMai" onclick="window.location.href='/buyItNow.html'">立即购买</p>
+    </div>
+</div>
+</body>
+
+<script>
+    var page = {
+        /*请求删除商品*/
+        mDeleteGoods:function(goodsList) {
+            console.log(goodsList);
+        },
+        /*立即购买触发的事件*/
+        promptlyPurchase:function(goodsList) {
+            console.log(goodsList);
+        },
+        /*增减商品时触发*/
+        mobileAddReduce:function (goodsList) {
+            console.log(goodsList);
+        }
+    };
+</script>
+</html>

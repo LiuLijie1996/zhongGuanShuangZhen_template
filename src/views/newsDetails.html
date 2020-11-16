@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <title>新闻详情</title>
+</head>
+<body>
+<!--头部-->
+<div id="header">
+    <!--默认显示的-->
+    <div class="box">
+        <div class="logo">
+            <img src="../asset/images/logo.png" alt="">
+        </div>
+
+        <!--导航-->
+        <div class="tabBar">
+            <ul class="layui-nav">
+                <li class="layui-nav-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--登录-->
+        <div class="loginBox">
+            <div class="top">
+                <p class="isShow">
+                    <span class="register">
+                        <a href="/register.html">注册</a>
+                    </span>
+                    <span class="login">
+                        <a href="/register.html">登录</a>
+                    </span>
+                </p>
+                <p class="isHide">
+                    <a href="">
+                        <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1425010324,3983996314&fm=26&gp=0.jpg" class="photo" alt="">
+                        <span class="userName">小明</span>
+                    </a>
+                </p>
+            </div>
+            <div class="bottom">
+                <input type="text" placeholder="搜索" autocomplete="off" class="layui-input">
+                <div class="search">
+                    <i class="layui-icon layui-icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--默认隐藏的-->
+    <div class="hideBox">
+        <div class="header">
+            <div class="logo">
+                <img src="../asset/images/phone_logo.png" alt="">
+            </div>
+            <div class="right_icon">
+                <i class="layui-icon layui-icon-search"></i>
+                <i class="layui-icon layui-icon-shrink-right"></i>
+            </div>
+        </div>
+
+        <!--隐藏的搜索框-->
+        <div class="searchInput">
+            <input type="text" class="layui-input">
+            <i class="layui-icon layui-icon-search"></i>
+        </div>
+
+        <!--隐藏的导航栏-->
+        <div class="navList">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/personalCenter.html">个人中心</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="PageContent">
+    <!--横幅-->
+    <div class="streamer">
+        <h1 class="title">新闻详情</h1>
+    </div>
+
+    <!--新闻-->
+    <div class="newsContent">
+        <!--面包屑导航-->
+        <div class="breadcrumb">
+            <span class="layui-breadcrumb" lay-separator=">">
+              <a href="/">首页</a>
+              <a><cite>新闻资讯</cite></a>
+            </span>
+        </div>
+
+        <!--主体内容-->
+        <div class="newsBody">
+            <!--标题-->
+            <h1 class="title">新闻标题</h1>
+
+            <!--发布信息-->
+            <div class="faBuInfo">
+                <!--发布时间-->
+                <p class="time">
+                    <span>发布时间：</span>
+                    <span>2020-01-01</span>
+                </p>
+                <!--新闻观看数量-->
+                <p class="viewNum">
+                    查看次数：999
+                </p>
+                <!--来源-->
+                <p class="source">
+                    <span>来源：</span>
+                    <span>安徽淮南</span>
+                </p>
+            </div>
+
+            <!--新闻内容-->
+            <div class="content">
+                也许是命中注定，我要与这一袭白衣结下一世情缘。
+                2009年，我不顾家人反对，带着我的女友，我现在的妻子一起来到这个城市生活，在我现在工作的医院开始新的工作。
+                那时，没有公交直达医院，下了公交，要走半个钟头的路才能到达上班的地方。医院没有暖气，每逢冬天，我和同事们靠煤火取暖。医院也没有正规的食堂，我们常常在上班的时候自带食物，或者带上柴米油盐，利用休息时间自己煮饭。
+                2010年冬天，我从地下室把煤炭提到三楼后，担心当晚值班的同事受冻，到医院后方的的山上砍柴生火，当时满山遍野结着厚厚的冰层，不小心从上坡上跌了下来，左手心被划了一条长长的伤口。
+                火终于被弄燃了，伤口却在痛，血，依然在流，心，却暖暖的！
+                回到家，父母埋怨：“叫你离开这个医院，你总是不听，万一感染什么怪病，叫你后悔一辈子！”
+                “我喜欢美丽的病菌！”我只有这样一句简单的回答。
+                甲流感和手足口病接踵而来的时候，作为倒班的医护人员，特别是上夜班的时候，一个人要负责病区二楼、三楼的相关医疗救治工作，在二楼与三楼两个病区之间穿梭到第二天下班。每天工作之余，我都会感觉很累，但每一天都过得充实、开心。
+                2011年，在我租住的狭小空间，仅10平方的小屋里，我与一直支持和鼓励着的女友举行了婚礼，组建了我们自己的家庭。结婚当天，在这个城市里，我们的宾客只有两桌人——所有院领导和我的同事们。那一刻，院领导和同事们给予了我从未有过的温暖和感动，也就从那天起，我开始把医院当成自己的家，把领导、同事和患者当着自己的亲人。性格内向，不善于表达的我，唯一能做的，就是在这片养育我的热土上，为卫生事业默默奉献自己的青春和微不足道的力量。
+                2012年，我工作的医院不断发展壮大，来了许多新同事，为医院的发展注入了新鲜的血液，病人量也在不断上升，这让我们在工作中更有动力，因为我们都看到了希望，看到医院未来的光芒。
+                医院党委建立后，我通过了组织的考验，加入了中国共产党，成为了一名光荣的中国共产党党员，实现了我多年以来梦寐以求的愿望，这让我倍感骄傲和自豪。
+                2013年，医院从这个城市的最东边搬迁至最西边，这是医院发展史上的新篇章，肩负本地区的重症结核病、精神病患者防治的神圣使命。
+                同年，我拥有了属于自己的房子，拥有了一个真正的属于自己的新家。
+                2014年，我和妻子有了可爱的大女儿。我深爱的这片土地上，卫生事业也在迅速发展。2016年我被安排到新的部门，负责本地区结核病患者的预防、护理、治疗等管理工作。
+                2020年，无情的新型冠状病毒在祖国大地点燃了烽烟，我和所有医护人员一样，对自己做了最坏的打算，顾不上新春佳节和家人的团聚，一直坚守在自己的岗位上，并随时准备祖国召唤。
+                随着疫情的烟消云散，我和妻子再次迎来了爱情的结晶。而我，从当初的懵懂少年变成了不惑之年的两个孩子的父亲。
+                转眼之间2020年已近尾声，再一转眼之间，我就叫做花甲之人了。
+                如果有一天，我和老伴漫步在晚年的黄昏，回首我的这一生，我会无悔的、自豪的说：“这是我的一世情缘！
+            </div>
+
+            <!--翻页-->
+            <div class="flipOver">
+                <p class="prePage">
+                    <span>上一页</span>
+                </p>
+                <p class="nextPage over">
+                    <span>下一页</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--默认显示的底部-->
+<div id="footer">
+    <div class="box1">
+        <div class="left">
+            <div class="top">
+                <a href="">首页</a> | <a href="">关于中冠双振</a> | <a href="">产品中心</a> | <a href="">新闻资讯</a> | <a
+                    href="">合作加盟</a> | <a href="">加入我们</a> | <a href="">联系我们</a>
+            </div>
+            <div class="info">
+                <p>全国热线：0554-8222789</p>
+                <p>招商销售电话：18055411655</p>
+                <p>地址：安徽省淮南市山南新区泰丰大街科技企业孵化器一号楼4层 / 上海浦东新区万安街332号</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="code">
+                <div class="pic">
+                    <img src="../asset/images/productCode.png" alt="">
+                </div>
+                <div class="title">产品视频</div>
+            </div>
+            <div class="code">
+                <div class="pic">
+                    <img src="../asset/images/installCode.png" alt="">
+                </div>
+                <div class="title">安装视频</div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        Copyright © 2017 All Rights Reserved 方大网络 皖ICP备17028853号-1 技术支持：淮南方大网络技术有限公司
+    </div>
+</div>
+<!--默认隐藏的底部-->
+<div id="hideFooter">
+    <div class="info">
+        <p>
+            <span>全国热线：</span>
+            <span>0554-8222789</span>
+        </p>
+        <p>
+            <span>招商销售电话：</span>
+            <span>18055411655</span>
+        </p>
+        <p>
+            <span>地址：</span>
+            <span>安徽省淮南市山南新区泰丰大街科技企业孵化器一号楼4层上海浦东新区万安街332号</span>
+        </p>
+    </div>
+
+    <div class="codeBox">
+        <div class="code">
+            <div class="pic">
+                <img src="../asset/images/productCode.png" alt="">
+            </div>
+            <div class="title">产品视频</div>
+        </div>
+        <div class="code">
+            <div class="pic">
+                <img src="../asset/images/installCode.png" alt="">
+            </div>
+            <div class="title">安装视频</div>
+        </div>
+    </div>
+
+    <div class="navList">
+        <a href="">产品中心</a> |
+        <a href="">新闻资讯</a> |
+        <a href="">合作加盟</a> |
+        <a href="">联系我们</a>
+    </div>
+
+    <div class="ICP">
+        <span>皖ICP备17028853号-1</span>
+        <span>技术支持：淮南方大网络技术有限公司</span>
+    </div>
+</div>
+
+<script>
+    layui.use(['element', 'laypage'], function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+    });
+</script>
+</body>
+</html>

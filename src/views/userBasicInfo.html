@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <title>基本信息</title>
+</head>
+<body>
+<!--移动端详情头部-->
+<div id="detailHeader">
+    <i class="layui-icon layui-icon-left" onclick="window.history.go(-1);"></i>
+    <span>基本信息</span>
+</div>
+
+<!--用户信息对应的表单-->
+<div id="hideForm">
+    <form class="layui-form" action="">
+        <div class=" layui-form-item layuiFormItemInput">
+            <label class="layui-form-label">
+                <i class="layui-icon layui-icon-username"></i>
+            </label>
+            <div class="layui-input-block">
+                <input type="text" name="userName" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layuiFormItemInput">
+            <label class="layui-form-label">
+                <i class="layui-icon layui-icon-password"></i>
+            </label>
+            <div class="layui-input-block">
+                <input type="password" name="oldPassword" required lay-verify="required" placeholder="请输入原密码"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layuiFormItemInput">
+            <label class="layui-form-label">
+                <i class="layui-icon layui-icon-password"></i>
+            </label>
+            <div class="layui-input-block">
+                <input type="password" name="password1" required lay-verify="required|password1" placeholder="请输入新密码"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layuiFormItemInput">
+            <label class="layui-form-label">
+                <i class="layui-icon layui-icon-password"></i>
+            </label>
+            <div class="layui-input-block">
+                <input type="password" name="password2" required lay-verify="required|password2" placeholder="请再次输入密码"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item submitBox">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="updateInfo">确认修改</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+
+<script>
+    var page = {
+        affirmUpdateInfo(data){
+            console.log(data, '确认修改资料时触发');
+        }
+    }
+</script>
+</html>

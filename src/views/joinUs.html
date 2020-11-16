@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <script src="/layui/layui.js"></script>
+    <title>加入我们</title>
+</head>
+<body>
+<!--头部-->
+<div id="header">
+    <!--默认显示的-->
+    <div class="box">
+        <div class="logo">
+            <img src="../asset/images/logo.png" alt="">
+        </div>
+
+        <!--导航-->
+        <div class="tabBar">
+            <ul class="layui-nav">
+                <li class="layui-nav-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--登录-->
+        <div class="loginBox">
+            <div class="top">
+                <p class="isShow">
+                    <span class="register">
+                        <a href="/register.html">注册</a>
+                    </span>
+                    <span class="login">
+                        <a href="/register.html">登录</a>
+                    </span>
+                </p>
+                <p class="isHide">
+                    <a href="">
+                        <img src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1425010324,3983996314&fm=26&gp=0.jpg" class="photo" alt="">
+                        <span class="userName">小明</span>
+                    </a>
+                </p>
+            </div>
+            <div class="bottom">
+                <input type="text" placeholder="搜索" autocomplete="off" class="layui-input">
+                <div class="search">
+                    <i class="layui-icon layui-icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--默认隐藏的-->
+    <div class="hideBox">
+        <div class="header">
+            <div class="logo">
+                <img src="../asset/images/phone_logo.png" alt="">
+            </div>
+            <div class="right_icon">
+                <i class="layui-icon layui-icon-search"></i>
+                <i class="layui-icon layui-icon-shrink-right"></i>
+            </div>
+        </div>
+
+        <!--隐藏的搜索框-->
+        <div class="searchInput">
+            <input type="text" class="layui-input">
+            <i class="layui-icon layui-icon-search"></i>
+        </div>
+
+        <!--隐藏的导航栏-->
+        <div class="navList">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">关于中冠双振</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">企业简介</a></dd>
+                        <dd><a href="">资质荣誉</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/productCenter.html">产品中心</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/newsInformation.html">新闻资讯</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">合作加盟</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">合作优势</a></dd>
+                        <dd><a href="">加盟条件</a></dd>
+                        <dd><a href="">市场支持</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/joinUs.html">加入我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/contactUs.html">联系我们</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/personalCenter.html">个人中心</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.use('element', function(){
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+    });
+</script>
+</body>
+</html>
